@@ -1,0 +1,1957 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace _22100174_박지윤
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            intro();
+
+            gamea();
+
+        }
+        static void intro()
+        {
+            Console.WriteLine("  * ˚ ˚ * ˚    *  *  ˚ ˛  *   *    ");
+            Console.WriteLine("========================================");
+            Console.WriteLine("  * ˚ ˚ * ˚    *  *  ˚ ˛  *   *    ");
+            Console.WriteLine("  ˚ ˛ *    ˚ ˚ ˛ ˚ ˛ *  *        ");
+            Console.WriteLine("  * ★Merry★* 。 * ˚ ˚ ˛ ˚ ˛ *  * ");
+            Console.WriteLine("*   。★Christmas★  。 *     。        ");
+            Console.WriteLine("   ° 。 ° ˚* _Π_____* 。 * ˚ *     ");
+            Console.WriteLine(" ˚ ˚ ˛* * */______/~＼ 。˚ ˚ ˛  * ");
+            Console.WriteLine("  ˚ ˛ *˛ * ｜ 田田 ｜ ｜   ˚        ");
+            Console.WriteLine("  *  ˛ ˚    Hoom Alone *    ˚˛*  *  ");
+            Console.WriteLine("  ˚ ˛ *    ˚ ˚ ˛ ˚ ˛ *  *        ");
+            Console.WriteLine("========================================");
+            Console.WriteLine("   크리스마스 스토리 게임을 시작합니다. ");
+            Console.WriteLine("========================================");
+            Console.WriteLine("  * ˚ ˚ *    ˚   *  *  ˚ ˛   *   * ");
+            Console.WriteLine("");
+
+            String _ = Console.ReadLine();
+            Console.Clear();
+        }
+        static void gamea()
+        {
+
+
+            Console.WriteLine("");
+            Console.WriteLine("l￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣l");
+            Console.WriteLine("| Christhmas!                                       [－][口][×] |");
+            Console.WriteLine("l￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣|");
+            Console.WriteLine("| 크리스마스의 케빈을 진행하시겠습니까?                          |");
+            Console.WriteLine("| 정말 재미있을겁니다.                                           |");
+            Console.WriteLine("|          ＿＿＿＿＿＿　 　 　           ＿＿＿＿＿＿　　　　   |");
+            Console.WriteLine("|         ｜예         |                 ｜아니요    ｜          |");
+            Console.WriteLine("|          ￣￣￣￣￣￣　　　　           ￣￣￣￣￣￣　　　　　 |");
+            Console.WriteLine(" ￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣");
+            Console.WriteLine("");
+
+            string an = Console.ReadLine();
+            if (an == "예")
+            {
+                yes();
+            }                  //yes()
+            else if (an == "아니요")
+            {
+                no();
+            }         //no()
+            else
+            {
+                Console.WriteLine("---------------------------------------------------------");
+                Console.WriteLine("잘~~~ 읽고 다시 눌러주세요 (예 / 아니요 )");
+                String ana = Console.ReadLine();
+                if (ana == "예")
+                {
+                    yes();
+                }
+                else if (ana == "아니요")
+                {
+                    no();
+                }
+                else
+                {
+                    no();
+                }
+            }                             // 잘 읽어보세요 예 / 아니요
+            string ans = Console.ReadLine();
+            if (ans == "가족")
+            {
+                family();
+            }
+            else if (ans == "혼자")
+            {
+                alone();
+            }
+            else
+            {
+                no();
+            }
+
+        }
+        static void yes()
+        {
+            Console.WriteLine("");
+            Console.WriteLine("당신은 애번리에 살고 있는 19세 케빈입니다. ");
+            Console.WriteLine("");
+            Console.WriteLine("가족들이 크리스마스 여행을 계획하고 있습니다. 하지만 당신은 혼자만의 크리스마스도 즐겨보고 싶어합니다.");
+            Console.WriteLine("");
+            Console.WriteLine("가족과 함께 여행을 가시겠습니까 ? 아니면 집에 남아 계실겁니까? (가족 / 혼자)");
+            Console.WriteLine("");
+
+        }                                        // 가족 / 혼자
+
+
+        static void no()
+        {
+            Console.WriteLine("---------------------------------------------------------");
+            Console.WriteLine("잘못된 선택으로 여기까지 왔군요... 당신 안녕히가세요...GOOD BYE");
+        }                     // 잘 가세요
+
+
+        static void family()
+        {
+            Console.Clear();
+            Console.WriteLine("---------------------------------------------------------");
+            Console.WriteLine("가족과 여행을 가는 당신. 크리스마스의 여행의 목적지는 '프랑스 스트라르부스' ");
+            Console.WriteLine("");
+            Console.WriteLine("당신은 이곳에 처음갑니다. 설레기 시작합니다. 앞으로의 여정이 궁금합니다.");
+            Console.WriteLine("");
+            Console.WriteLine("엄마 : 케빈~ 프랑스에서 ****(을/를) 할 테니 기대하고 있어 ^^ ");
+            Console.WriteLine("");
+            Console.WriteLine("당신은 ****이란 말을 듣고 무척이나 설레어 합니다. ****은 무엇일까요? ");
+            Console.WriteLine("");
+            Console.WriteLine("(오로라보기 / 산타보기 )");
+            Console.WriteLine("");
+
+            string ans = Console.ReadLine();
+            if (ans == "오로라보기")
+            {
+                orora();
+            }
+            else if (ans == "산타보기")
+            {
+                santa();
+            }
+            else
+            {
+                Console.WriteLine("---------------------------------------------------------");
+                Console.WriteLine("잘~~~ 읽고 다시 눌러주세요. ");
+
+                String ana = Console.ReadLine();
+                if (ana == "오로라보기")
+                {
+                    orora();
+                }
+                else if (ana == "산타보기")
+                {
+                    santa();
+                }
+                else
+                {
+                    no();
+                }
+            }
+        }
+
+        static void alone()
+        {
+            Console.Clear();
+            Console.WriteLine("혼자가 된 자유를 만끽합니다. 그러던 그때!");
+            Console.WriteLine("");
+            Console.WriteLine("==========================");
+            Console.WriteLine("||      __________      ||");
+            Console.WriteLine("||     |__화장실__|     ||");
+            Console.WriteLine("||     ___      ___     ||           아");
+            Console.WriteLine("||    |   |    |   |    ||       아");
+            Console.WriteLine("||    |   |    |   |    ||    아");
+            Console.WriteLine("||    |   |    |   |    || 쏴");
+            Console.WriteLine("||     ---      ---     ||");
+            Console.WriteLine("||  ---------------  ●  ||뚝");
+            Console.WriteLine("||                      ||   ....");
+            Console.WriteLine("||     ___      __      ||        뚝");
+            Console.WriteLine("||    |   |    |   |    ||            .....");
+            Console.WriteLine("||    |   |    |   |    ||");
+            Console.WriteLine("||    |   |    |   |    ||");
+            Console.WriteLine("||     ---      ---     ||");
+            Console.WriteLine("||                      ||");
+            Console.WriteLine("= ========================");
+            Console.WriteLine("");
+            Console.WriteLine("");
+            Console.WriteLine("아무도 없는 화장실에서 물 소리가 나기 시작합니다....(촤아아아)");
+            Console.WriteLine("");
+            Console.WriteLine("---------------------------------------------------------");
+            Console.WriteLine("화장실에 가 보시겠습니까? (예 / 아니요)");
+
+
+            string pp = Console.ReadLine();
+            if (pp == "예")
+            {
+                Console.Clear();
+                Console.WriteLine("");
+                Console.WriteLine("             ●             ");
+                Console.WriteLine("            ┗╋┓  두근 두근 ");
+                Console.WriteLine("            ┏┫             ");
+                Console.WriteLine("             ┃             ");
+                Console.WriteLine("");
+                Console.WriteLine("뚜벅뚜벅......뚜벅뚜벅.......");
+                Console.WriteLine("");
+                Console.WriteLine("천천히 걸어가봅니다. (벌컥!!)");
+                Console.WriteLine("");
+                Console.WriteLine("화장실 안에......산타가 있습니다!!! 무슨 일인걸까요?");
+                Console.WriteLine("");
+                Console.WriteLine("산타 : 당신!! 여행을 간게 아니었나?");
+                Console.WriteLine("");
+                Console.WriteLine("당신 : 네??");
+                Console.WriteLine("");
+                Console.WriteLine("산타 : 이거 안됐군....");
+                Console.WriteLine("");
+                string __ = Console.ReadLine();
+                Console.Clear();
+                friend();
+
+            }
+
+            else if (pp == "아니요")
+            {
+                Console.Clear();
+                Console.WriteLine("쏴아아아아、＼ 、＼ 、＼  。゜、＼ ＼。゜＼、 ＼");
+                Console.WriteLine("＼゜＼、＼ 、＼、  ＼、＼ 쏴아아아아＼ ＼ ＼。゜＼、、");
+                Console.WriteLine(" ＼  。゜＼、  ＼＼  ＼。゜＼、＼゜ ＼  、＼、＼");
+                Console.WriteLine("＼゜＼、＼  、＼ 、＼??????????? ＼。゜＼、 ＼");
+                Console.WriteLine("＼゜＼、 쏴아아  ＼、＼  ＼  、＼、＼ ＼  ＼。゜  ＼、、");
+                Console.WriteLine(" ＼  。゜＼、  ＼＼  ＼、＼゜ 쏴아아아＼、＼ 、＼、＼");
+                Console.WriteLine(" ＼  。゜＼、  ＼＼  ＼。゜＼、＼゜ ＼  、＼、＼");
+                Console.WriteLine("");
+                Console.WriteLine("");
+                Console.WriteLine("계속해서 물 소리가 납니다.");
+                Console.WriteLine("");
+                Console.WriteLine("그래도 안 가보시겠습니까? 정체가 궁금합니다. (안가요 / 가볼게요)");
+
+                string ww = Console.ReadLine();
+                if (ww == "안가요")
+                {
+                    Console.WriteLine("알겠습니다. 당신은 너무 졸린 나머지 잠에 들었습니다. ");
+                    string __ = Console.ReadLine();
+                    Console.Clear();
+                    alone();
+                }
+                else if (ww == "가볼게요")
+                {
+                    Console.WriteLine("좋은 생각입니다. 한번 가봅시다.");
+                    Console.Clear();
+                    Console.WriteLine("");
+                    Console.WriteLine("             ●             ");
+                    Console.WriteLine("            ┗╋┓  두근 두근 ");
+                    Console.WriteLine("            ┏┫             ");
+                    Console.WriteLine("             ┃             ");
+                    Console.WriteLine("");
+                    Console.WriteLine("뚜벅뚜벅......뚜벅뚜벅.......");
+                    Console.WriteLine("");
+                    Console.WriteLine("천천히 걸어가봅니다. (벌컥!!)");
+                    Console.WriteLine("");
+                    Console.WriteLine("화장실 안에......산타가 있습니다!!! 무슨 일인걸까요?");
+                    Console.WriteLine("");
+                    Console.WriteLine("산타 : 당신!! 여행을 간게 아니었나?");
+                    Console.WriteLine("");
+                    Console.WriteLine("당신 : 네??");
+                    Console.WriteLine("");
+                    Console.WriteLine("산타 : 이거 안됐군....");
+                    Console.WriteLine("");
+                    string __ = Console.ReadLine();
+                    Console.Clear();
+                    friend();
+                }
+            }
+            else
+            {
+                no();
+            }
+
+        }
+
+        static void friend()
+        {
+
+            Console.WriteLine("");
+            Console.WriteLine("산타 : 나를 본 인간은 많았지만 그 누구도 나를 보았다고 말한 사람은 없었지...후후");
+            Console.WriteLine("       왜 그럴거 같니");
+            Console.WriteLine("");
+            Console.WriteLine("산타 : 모두 산타 회사의 직원이 되었거든. 일손은 항상 부족해서 말이야 !!");
+            Console.WriteLine("       날 보았으니 이제부터 너도 우리 회사 직원이 되는거야. 좋지~? ");
+            Console.WriteLine("");
+            Console.WriteLine("산타를 목격한 당신!! 이제부터 당신은 산타 회사의 직원이 되었습니다. (노예가 되는....)");
+            Console.WriteLine("");
+            Console.WriteLine("산타의 직원이 된 당신 어서 크리스마스를 준비해 주세요!");
+            Console.WriteLine("");
+            Console.WriteLine("선물을 준비해 주시면 됩니다. 어떤 선물을 준비해주시겠습니까? (아무거나 / 물어보기)");
+            Console.WriteLine("");
+
+            string ii = Console.ReadLine();
+            if (ii == "아무거나")
+            {
+                Console.Clear();
+                Console.WriteLine("아무거나 챙긴 당신 어서 산타를 따라가보세요!");
+                String _ = Console.ReadLine();
+                Console.Clear();
+                go();
+
+            }
+            else if (ii == "물어보기")
+            {
+                Console.Clear();
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("  -　-　저기요 !!　-　-");
+                Console.ForegroundColor = ConsoleColor.White;
+                Console.WriteLine("옆 사람을 불렀습니다.");
+                Console.WriteLine("");
+                Console.ForegroundColor = ConsoleColor.Blue;
+                Console.WriteLine("　   ／￣￣￣＼　 ？ ");
+                Console.WriteLine("　　/  ー　 ー ヽ ");
+                Console.WriteLine("　 /　 (●) 　(●)| ");
+                Console.WriteLine("　｜　 ⌒(_人_)⌒ | ");
+                Console.WriteLine("　 ＼　   `⌒′ ノ ");
+                Console.WriteLine("　　　/⌒ ヽ-イ ");
+                Console.WriteLine("　　 (　r 　  ｜ ");
+                Console.WriteLine("　　 ヽノノー-｜ ");
+                Console.WriteLine("　　   |＿_/_/ ");
+                Console.WriteLine("　　　 `ー^ー`");
+                Console.WriteLine("");
+                Console.ForegroundColor = ConsoleColor.White;
+                Console.WriteLine("(으악!!! 사람이 아니잖아 ;;)");
+                Console.WriteLine("");
+                Console.WriteLine("뭐 좀 물어볼게요.... 선물은 어떤걸 준비하면 좋죠?");
+                Console.WriteLine("");
+                Console.WriteLine("제가 산타 세계? 는 처음이라서요");
+                Console.WriteLine("");
+                Console.WriteLine("");
+                Console.WriteLine("?? : 아아-- 깜짝이야.... ");
+                Console.WriteLine("");
+                Console.WriteLine("?? : 크흠... 일단 다양한게 좋습니다. 인형이나 자동차 장난감 같은 ");
+                Console.WriteLine("");
+                Console.WriteLine("아하 감사합니다!");
+                Console.WriteLine("");
+                Console.WriteLine("당신은 인형과 자동차 장난감 그리고 여러가지 선물을 챙깁니다. ");
+                Console.WriteLine("");
+                Console.WriteLine("자! 산타가 출발하려 합니다. 어서 따라가보세요!");
+                Console.WriteLine("");
+                String _ = Console.ReadLine();
+                Console.Clear();
+                go();
+
+            }
+            else
+            {
+                Console.WriteLine("잘 읽어보세요..");
+                string pp = Console.ReadLine();
+                if(pp=="아무거나")
+                {
+                    Console.Clear();
+                    Console.WriteLine("아무거나 챙긴 당신 어서 산타를 따라가보세요!");
+                    String _ = Console.ReadLine();
+                    Console.Clear();
+                    go();
+                }
+                else if(pp=="물어보기")
+                {
+                    Console.Clear();
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.WriteLine("  -　-　저기요 !!　-　-");
+                    Console.ForegroundColor = ConsoleColor.White;
+                    Console.WriteLine("");
+
+                    Console.WriteLine("옆 사람을 불렀습니다.");
+                    Console.WriteLine("");
+                    Console.ForegroundColor = ConsoleColor.Blue;
+                    Console.WriteLine("　   ／￣￣￣＼　 ？ ");
+                    Console.WriteLine("　　/  ー　 ー ヽ ");
+                    Console.WriteLine("　 /　 (●) 　(●)| ");
+                    Console.WriteLine("　｜　 ⌒(_人_)⌒ | ");
+                    Console.WriteLine("　 ＼　   `⌒′ ノ ");
+                    Console.WriteLine("　　　/⌒ ヽ-イ ");
+                    Console.WriteLine("　　 (　r 　  ｜ ");
+                    Console.WriteLine("　　 ヽノノー-｜ ");
+                    Console.WriteLine("　　   |＿_/_/ ");
+                    Console.WriteLine("　　　 `ー^ー`");
+                    Console.WriteLine("");
+                    Console.ForegroundColor = ConsoleColor.White;
+                    Console.WriteLine("(으악!!! 사람이 아니잖아 ;;)");
+                    Console.WriteLine("");
+                    Console.WriteLine("뭐 좀 물어볼게요.... 선물은 어떤걸 준비하면 좋죠?");
+                    Console.WriteLine("");
+                    Console.WriteLine("제가 산타 세계? 는 처음이라서요");
+                    Console.WriteLine("");
+                    Console.WriteLine("");
+                    Console.WriteLine("?? : 아아-- 깜짝이야.... ");
+                    Console.WriteLine("");
+                    Console.WriteLine("?? : 크흠... 일단 다양한게 좋습니다. 인형이나 자동차 장난감 같은 ");
+                    Console.WriteLine("");
+                    Console.WriteLine("아하 감사합니다!");
+                    Console.WriteLine("");
+                    Console.WriteLine("당신은 인형과 자동차 장난감 그리고 여러가지 선물을 챙깁니다. ");
+                    Console.WriteLine("");
+                    Console.WriteLine("자! 산타가 출발하려 합니다. 어서 따라가보세요!");
+                    Console.WriteLine("");
+                    String _ = Console.ReadLine();
+                    Console.Clear();
+                    go();
+                }
+                else
+                {
+                    no();
+                }
+            }
+        }
+
+        static void go()
+        {
+            Console.WriteLine("");
+            Console.WriteLine("썰매에 탑승한 당신 !! 선물이 떨어지지 않게 단단히 고정합니다. (꽈악)");
+            Console.WriteLine("");
+            Console.WriteLine("산타 : 오늘이 처음이지? 그렇게 어렵진 않을것이여~~ 호호호 ");
+            Console.WriteLine("       이럇!!! ");
+            Console.WriteLine("");
+            Console.WriteLine("이제 출발합니다 ~~~~~!!");
+            Console.WriteLine("");
+            Console.WriteLine("");
+            Console.WriteLine("첫 번째 집에 도착하였습니다. ");
+            Console.WriteLine("");
+            Console.WriteLine("  * ˚ ˚ * ˚    *  *  ˚ ˛  *   *    ");
+            Console.WriteLine("  ˚ ˛ *    ˚ ˚ ˛ ˚ ˛ *    *        ");
+            Console.WriteLine("   ° 。 ° ˚* _Π_____* 。 *   ˚ *     ");
+            Console.WriteLine(" ˚ ˚ ˛* * */______/~＼ 。˚ ˚ ˛  * ");
+            Console.WriteLine("     *___˛ *｜ 田田 ｜ ｜   ˚ ____    ");
+            Console.WriteLine("  * ˚------     *  *    ------- ˚ *   *    ");
+            Console.WriteLine("  ˚ ˛ *    ˚ ˚ ˛ ˚ ˛ *  *        ");
+            Console.WriteLine("");
+            Console.WriteLine("선물을 주고 와야합니다. 어디로 들어가시겠습니까? (굴뚝 / 창문 )");
+
+            string yy = Console.ReadLine();
+            if (yy == "굴뚝")
+            {
+                Console.Clear();
+                Console.WriteLine("");
+                Console.WriteLine("당신은 굴뚝으로 조심히 들어갑니다.");
+                Console.WriteLine("");
+                Console.WriteLine("■■■■■■■■■■■■■■■■■■■■■■■■");
+                Console.WriteLine("■■■■----------------■■■■");
+                Console.WriteLine("■■■|   ___|    ___| |■■■");
+                Console.WriteLine("■■■■----------------■■■■");
+                Console.WriteLine("■■■■|  |     |     |■■■■");
+                Console.WriteLine("■■■■|    |     |   |■■■■");
+                Console.WriteLine("■■■■| |      |     |■■■■");
+                Console.WriteLine("■■■■|    |     |   |■■■■");
+                Console.WriteLine("■■■■|   |    |     |■■■■");
+                Console.WriteLine("");
+                Console.WriteLine("이런!! 굴뚝은 처음이라 중심을 잃고 떨어졌습니다.");
+                Console.WriteLine("");
+                Console.WriteLine("당신은 너무 놀라 그만 소리를 지르고 말았습니다. (아아아아악!)");
+                Console.WriteLine("");
+                Console.WriteLine("산타 : 자네 괜찮은가? 그래도 소리는 지르면 안되지!!!! 사람들이 깬다고!!");
+                Console.WriteLine("");
+                Console.WriteLine("죄송합니다!! (-허업-) 어서 선물을...... 그때 !!!");
+                String ___ = Console.ReadLine();
+                Console.Clear();
+                Console.WriteLine("==========================");
+                Console.WriteLine("||      __________      ||");
+                Console.WriteLine("||     |__________|     ||");
+                Console.WriteLine("||     ___      ___     ||");
+                Console.WriteLine("||    |   |    |   |    ||");
+                Console.WriteLine("||    |   |    |   |    ||");
+                Console.WriteLine("||    |   |    |   |    ||");
+                Console.WriteLine("||     ---      ---     ||");
+                Console.WriteLine("||  ---------------  ●  ||     스-----윽");
+                Console.WriteLine("||                      ||");
+                Console.WriteLine("||     ___      __      ||");
+                Console.WriteLine("||    |   |    |   |    ||");
+                Console.WriteLine("||    |   |    |   |    ||");
+                Console.WriteLine("||    |   |    |   |    ||");
+                Console.WriteLine("||     ---      ---     ||");
+                Console.WriteLine("||                      ||");
+                Console.WriteLine("= ========================");
+                Console.WriteLine("");
+                Console.WriteLine("!!!!!!!!!! 문이 열립니다.!!!!!!!!!");
+                String ____ = Console.ReadLine();
+                Console.Clear();
+                Console.WriteLine("");
+                Console.WriteLine("　　　ミ~￣￣￣＼");
+                Console.WriteLine("　　　/ ＿＿ ＿＿亅");
+                Console.WriteLine("　　 /  ＞ ⌒　⌒｜");
+                Console.WriteLine("　　｜/　  (-) (-)｜");
+                Console.WriteLine("　　(6 ――○-○-｜");
+                Console.WriteLine("　　｜　　　つ  ｜");
+                Console.WriteLine("　　｜　　＿＿_)/");
+                Console.WriteLine("　　 ＼　(＿／  /");
+                Console.WriteLine("　　 ／＼＿＿／");
+                Console.WriteLine("　　/　 ＼ロ/");
+                Console.WriteLine("　 / /　　Ｖ||");
+                Console.WriteLine("　/_/　　 ｜||");
+                Console.WriteLine("⊂ﾆu＼＿_／L|⊃");
+                Console.WriteLine("　　｜　 / /");
+                Console.WriteLine("　　｜　/ /");
+                Console.WriteLine("　　｜ / /");
+                Console.WriteLine("　　(=フフ");
+                Console.WriteLine("");
+                Console.WriteLine("사람이 일어났습니다!! 이대로 들키는 걸까요!");
+                Console.WriteLine("");
+                Console.WriteLine("산타의 도움으로 숨었습니다.");
+                Console.WriteLine("");
+                Console.WriteLine("사람 : 에잇 선물은 커녕 산타 그림자도 안보이네 쳇쳇-- 그럼 그렇지 산타는 없어!");
+                Console.WriteLine("");
+                Console.WriteLine("물을 마신 사람은 다시 방으로 들어갑니다.");
+                Console.WriteLine("");
+                Console.WriteLine("휴우  ====>> 다행히 들키지는 않았습니다.");
+                Console.WriteLine("");
+                Console.WriteLine("하지만 산타의 표정이 좋지는 않군요... 일단 선물을 놓고 어서 나옵니다.");
+                Console.WriteLine("");
+                Console.WriteLine("첫 번째 집은 무사히 끝냈습니다.");
+                Console.WriteLine("");
+
+            }
+            else if (yy == "창문")
+            {
+                Console.Clear();
+                Console.WriteLine("");
+                Console.WriteLine("당신은 창문으로 조심히 들어갑니다.");
+                Console.WriteLine("");
+                Console.WriteLine("==============================");
+                Console.WriteLine("|| |=========|  |=========| ||");
+                Console.WriteLine("|| |         |  |         | ||");
+                Console.WriteLine("|| |=========|  |=========| ||");
+                Console.WriteLine("|| |=========|  |=========| ||");
+                Console.WriteLine("|| |         |  |         | ||");
+                Console.WriteLine("|| |=========|  |=========| ||");
+                Console.WriteLine("==============================");
+                Console.WriteLine("");
+                Console.WriteLine("이런!! 창문은 처음이라 중심을 잃고 떨어졌습니다.");
+                Console.WriteLine("");
+                Console.WriteLine("당신은 너무 놀라 그만 소리를 지르고 말았습니다. (아아아아악!)");
+                Console.WriteLine("");
+                Console.WriteLine("산타 : 자네 괜찮은가? 그래도 소리는 지르면 안되지!!!! 사람들이 깬다고!!");
+                Console.WriteLine("");
+                Console.WriteLine("죄송합니다!! (-허업-) 어서 선물을...... 그때 !!!");
+                String ___ = Console.ReadLine();
+                Console.Clear();
+                Console.WriteLine("==========================");
+                Console.WriteLine("||      __________      ||");
+                Console.WriteLine("||     |__________|     ||");
+                Console.WriteLine("||     ___      ___     ||");
+                Console.WriteLine("||    |   |    |   |    ||");
+                Console.WriteLine("||    |   |    |   |    ||");
+                Console.WriteLine("||    |   |    |   |    ||");
+                Console.WriteLine("||     ---      ---     ||");
+                Console.WriteLine("||  ---------------  ●  ||     스-----윽");
+                Console.WriteLine("||                      ||");
+                Console.WriteLine("||     ___      __      ||");
+                Console.WriteLine("||    |   |    |   |    ||");
+                Console.WriteLine("||    |   |    |   |    ||");
+                Console.WriteLine("||    |   |    |   |    ||");
+                Console.WriteLine("||     ---      ---     ||");
+                Console.WriteLine("||                      ||");
+                Console.WriteLine("= ========================");
+                Console.WriteLine("");
+                Console.WriteLine("!!!!!!!!!! 문이 열립니다.!!!!!!!!!");
+                String ____ = Console.ReadLine();
+                Console.Clear();
+                Console.WriteLine("");
+                Console.WriteLine("　　　ミ~￣￣￣＼");
+                Console.WriteLine("　　　/ ＿＿ ＿＿亅");
+                Console.WriteLine("　　 /  ＞ ⌒　⌒｜");
+                Console.WriteLine("　　｜/　  (-) (-)｜");
+                Console.WriteLine("　　(6 ――○-○-｜");
+                Console.WriteLine("　　｜　　　つ  ｜");
+                Console.WriteLine("　　｜　　＿＿_)/");
+                Console.WriteLine("　　 ＼　(＿／  /");
+                Console.WriteLine("　　 ／＼＿＿／");
+                Console.WriteLine("　　/　 ＼ロ/");
+                Console.WriteLine("　 / /　　Ｖ||");
+                Console.WriteLine("　/_/　　 ｜||");
+                Console.WriteLine("⊂ﾆu＼＿_／L|⊃");
+                Console.WriteLine("　　｜　 / /");
+                Console.WriteLine("　　｜　/ /");
+                Console.WriteLine("　　｜ / /");
+                Console.WriteLine("　　(=フフ");
+                Console.WriteLine("");
+                Console.WriteLine("사람이 일어났습니다!! 이대로 들키는 걸까요!");
+                Console.WriteLine("");
+                Console.WriteLine("산타의 도움으로 숨었습니다.");
+                Console.WriteLine("");
+                Console.WriteLine("사람 : 에잇 선물은 커녕 산타 그림자도 안보이네 쳇쳇-- 그럼 그렇지 산타는 없어!");
+                Console.WriteLine("");
+                Console.WriteLine("물을 마신 사람은 다시 방으로 들어갑니다.");
+                Console.WriteLine("");
+                Console.WriteLine("휴우  ====>> 다행히 들키지는 않았습니다.");
+                Console.WriteLine("");
+                Console.WriteLine("하지만 산타의 표정이 좋지는 않군요... 일단 선물을 놓고 어서 나옵니다.");
+                Console.WriteLine("");
+                Console.WriteLine("첫 번째 집은 무사히 끝냈습니다.");
+                Console.WriteLine("");
+
+            }
+            else
+            {
+                Console.WriteLine("잘 읽어보세요");
+                string oo = Console.ReadLine();
+                if (oo == "굴뚝")
+                {
+                    Console.Clear();
+                    Console.WriteLine("");
+                    Console.WriteLine("당신은 굴뚝으로 조심히 들어갑니다.");
+                    Console.WriteLine("");
+                    Console.WriteLine("■■■■■■■■■■■■■■■■");
+                    Console.WriteLine("■■■■----------------■■■■");
+                    Console.WriteLine("■■■|   ___|    ____| |■■■");
+                    Console.WriteLine("■■■■----------------■■■■");
+                    Console.WriteLine("■■■■|  |     |     |■■■■");
+                    Console.WriteLine("■■■■|    |     |   |■■■■");
+                    Console.WriteLine("■■■■| |      |     |■■■■");
+                    Console.WriteLine("■■■■|    |     |   |■■■■");
+                    Console.WriteLine("■■■■|   |    |     |■■■■");
+                    Console.WriteLine("");
+                    Console.WriteLine("이런!! 굴뚝은 처음이라 중심을 잃고 떨어졌습니다.");
+                    Console.WriteLine("");
+                    Console.WriteLine("당신은 너무 놀라 그만 소리를 지르고 말았습니다. (아아아아악!)");
+                    Console.WriteLine("");
+                    Console.WriteLine("산타 : 자네 괜찮은가? 그래도 소리는 지르면 안되지!!!! 사람들이 깬다고!!");
+                    Console.WriteLine("");
+                    Console.WriteLine("죄송합니다!! (-허업-) 어서 선물을...... 그때 !!!");
+                    String ___ = Console.ReadLine();
+                    Console.Clear();
+                    Console.WriteLine("==========================");
+                    Console.WriteLine("||      __________      ||");
+                    Console.WriteLine("||     |__________|     ||");
+                    Console.WriteLine("||     ___      ___     ||");
+                    Console.WriteLine("||    |   |    |   |    ||");
+                    Console.WriteLine("||    |   |    |   |    ||");
+                    Console.WriteLine("||    |   |    |   |    ||");
+                    Console.WriteLine("||     ---      ---     ||");
+                    Console.WriteLine("||  ---------------  ●  ||     스-----윽");
+                    Console.WriteLine("||                      ||");
+                    Console.WriteLine("||     ___      __      ||");
+                    Console.WriteLine("||    |   |    |   |    ||");
+                    Console.WriteLine("||    |   |    |   |    ||");
+                    Console.WriteLine("||    |   |    |   |    ||");
+                    Console.WriteLine("||     ---      ---     ||");
+                    Console.WriteLine("||                      ||");
+                    Console.WriteLine("= ========================");
+                    Console.WriteLine("");
+                    Console.WriteLine("!!!!!!!!!! 문이 열립니다.!!!!!!!!!");
+                    String ____ = Console.ReadLine();
+                    Console.Clear();
+                    Console.WriteLine("");
+                    Console.WriteLine("　　　ミ~￣￣￣＼");
+                    Console.WriteLine("　　　/ ＿＿ ＿＿亅");
+                    Console.WriteLine("　　 /  ＞ ⌒　⌒｜");
+                    Console.WriteLine("　　｜/　  (-) (-)｜");
+                    Console.WriteLine("　　(6 ――○-○-｜");
+                    Console.WriteLine("　　｜　　　つ  ｜");
+                    Console.WriteLine("　　｜　　＿＿_)/");
+                    Console.WriteLine("　　 ＼　(＿／  /");
+                    Console.WriteLine("　　 ／＼＿＿／");
+                    Console.WriteLine("　　/　 ＼ロ/");
+                    Console.WriteLine("　 / /　　Ｖ||");
+                    Console.WriteLine("　/_/　　 ｜||");
+                    Console.WriteLine("⊂ﾆu＼＿_／L|⊃");
+                    Console.WriteLine("　　｜　 / /");
+                    Console.WriteLine("　　｜　/ /");
+                    Console.WriteLine("　　｜ / /");
+                    Console.WriteLine("　　(=フフ");
+                    Console.WriteLine("");
+                    Console.WriteLine("사람이 일어났습니다!! 이대로 들키는 걸까요!");
+                    Console.WriteLine("");
+                    Console.WriteLine("산타의 도움으로 숨었습니다.");
+                    Console.WriteLine("");
+                    Console.WriteLine("사람 : 에잇 선물은 커녕 산타 그림자도 안보이네 쳇쳇-- 그럼 그렇지 산타는 없어!");
+                    Console.WriteLine("");
+                    Console.WriteLine("물을 마신 사람은 다시 방으로 들어갑니다.");
+                    Console.WriteLine("");
+                    Console.WriteLine("휴우  ====>> 다행히 들키지는 않았습니다.");
+                    Console.WriteLine("");
+                    Console.WriteLine("하지만 산타의 표정이 좋지는 않군요... 일단 선물을 놓고 어서 나옵니다.");
+                    Console.WriteLine("");
+                    Console.WriteLine("첫 번째 집은 무사히 끝냈습니다.");
+                    Console.WriteLine("");
+                }
+                else if (oo == "창문")
+                {
+                    Console.Clear();
+                    Console.WriteLine("");
+                    Console.WriteLine("당신은 창문으로 조심히 들어갑니다.");
+                    Console.WriteLine("");
+                    Console.WriteLine("==============================");
+                    Console.WriteLine("|| |=========|  |=========| ||");
+                    Console.WriteLine("|| |         |  |         | ||");
+                    Console.WriteLine("|| |=========|  |=========| ||");
+                    Console.WriteLine("|| |=========|  |=========| ||");
+                    Console.WriteLine("|| |         |  |         | ||");
+                    Console.WriteLine("|| |=========|  |=========| ||");
+                    Console.WriteLine("==============================");
+                    Console.WriteLine("");
+                    Console.WriteLine("이런!! 창문은 처음이라 중심을 잃고 떨어졌습니다.");
+                    Console.WriteLine("");
+                    Console.WriteLine("당신은 너무 놀라 그만 소리를 지르고 말았습니다. (아아아아악!)");
+                    Console.WriteLine("");
+                    Console.WriteLine("산타 : 자네 괜찮은가? 그래도 소리는 지르면 안되지!!!! 사람들이 깬다고!!");
+                    Console.WriteLine("");
+                    Console.WriteLine("죄송합니다!! (-허업-) 어서 선물을...... 그때 !!!");
+                    String ___ = Console.ReadLine();
+                    Console.Clear();
+                    Console.WriteLine("==========================");
+                    Console.WriteLine("||      __________      ||");
+                    Console.WriteLine("||     |__________|     ||");
+                    Console.WriteLine("||     ___      ___     ||");
+                    Console.WriteLine("||    |   |    |   |    ||");
+                    Console.WriteLine("||    |   |    |   |    ||");
+                    Console.WriteLine("||    |   |    |   |    ||");
+                    Console.WriteLine("||     ---      ---     ||");
+                    Console.WriteLine("||  ---------------  ●  ||     스-----윽");
+                    Console.WriteLine("||                      ||");
+                    Console.WriteLine("||     ___      __      ||");
+                    Console.WriteLine("||    |   |    |   |    ||");
+                    Console.WriteLine("||    |   |    |   |    ||");
+                    Console.WriteLine("||    |   |    |   |    ||");
+                    Console.WriteLine("||     ---      ---     ||");
+                    Console.WriteLine("||                      ||");
+                    Console.WriteLine("= ========================");
+                    Console.WriteLine("");
+                    Console.WriteLine("!!!!!!!!!! 문이 열립니다.!!!!!!!!!");
+                    String ____ = Console.ReadLine();
+                    Console.Clear();
+                    Console.WriteLine("");
+                    Console.WriteLine("　　　ミ~￣￣￣＼");
+                    Console.WriteLine("　　　/ ＿＿ ＿＿亅");
+                    Console.WriteLine("　　 /  ＞ ⌒　⌒｜");
+                    Console.WriteLine("　　｜/　  (-) (-)｜");
+                    Console.WriteLine("　　(6 ――○-○-｜");
+                    Console.WriteLine("　　｜　　　つ  ｜");
+                    Console.WriteLine("　　｜　　＿＿_)/");
+                    Console.WriteLine("　　 ＼　(＿／  /");
+                    Console.WriteLine("　　 ／＼＿＿／");
+                    Console.WriteLine("　　/　 ＼ロ/");
+                    Console.WriteLine("　 / /　　Ｖ||");
+                    Console.WriteLine("　/_/　　 ｜||");
+                    Console.WriteLine("⊂ﾆu＼＿_／L|⊃");
+                    Console.WriteLine("　　｜　 / /");
+                    Console.WriteLine("　　｜　/ /");
+                    Console.WriteLine("　　｜ / /");
+                    Console.WriteLine("　　(=フフ");
+                    Console.WriteLine("");
+                    Console.WriteLine("사람이 일어났습니다!! 이대로 들키는 걸까요!");
+                    Console.WriteLine("");
+                    Console.WriteLine("산타의 도움으로 숨었습니다.");
+                    Console.WriteLine("");
+                    Console.WriteLine("사람 : 에잇 선물은 커녕 산타 그림자도 안보이네 쳇쳇-- 그럼 그렇지 산타는 없어!");
+                    Console.WriteLine("");
+                    Console.WriteLine("물을 마신 사람은 다시 방으로 들어갑니다.");
+                    Console.WriteLine("");
+                    Console.WriteLine("휴우  ====>> 다행히 들키지는 않았습니다.");
+                    Console.WriteLine("");
+                    Console.WriteLine("하지만 산타의 표정이 좋지는 않군요... 일단 선물을 놓고 어서 나옵니다.");
+                    Console.WriteLine("");
+                    Console.WriteLine("첫 번째 집은 무사히 끝냈습니다.");
+                    Console.WriteLine("");
+                }
+                else
+                {
+                    no();
+                }
+            }   
+
+
+            String _ = Console.ReadLine();
+            Console.Clear();
+            Console.WriteLine("두 번째 집에 도착하였습니다. ");
+            Console.WriteLine("");
+            Console.WriteLine("  * ˚ ˚ * ˚    *  *  ˚ ˛  *   *    ");
+            Console.WriteLine("  ˚ ˛ *    ˚ ˚ ˛ ˚ ˛ *    *        ");
+            Console.WriteLine("   ° 。 ° ˚* _______* 。 *   ˚ *     ");
+            Console.WriteLine(" ˚ ˚ ˛* * */______/~＼ 。˚ ˚ ˛  * ");
+            Console.WriteLine("     *___˛ *｜ 田田 ｜ ｜   ˚ ____    ");
+            Console.WriteLine("  * ˚------     *  *    ------- ˚ *   *    ");
+            Console.WriteLine("  ˚ ˛ *    ˚ ˚ ˛ ˚ ˛ *  *        ");
+            Console.WriteLine("");
+            Console.WriteLine("선물을 주고 와야합니다. 이곳은 굴뚝이 없습니다. (문 / 창문)");
+
+            string rr = Console.ReadLine();
+            if (rr == "문")
+            {
+                Console.Clear();
+                Console.WriteLine("");
+                Console.WriteLine("        ／￣￣￣￣＼ ");
+                Console.WriteLine("　　    /／￣￣~＼　｜ ");
+                Console.WriteLine("　　    V―　      丿｜ ");
+                Console.WriteLine("　　    |丶〉 /丶   /､ ");
+                Console.WriteLine("　　    | /　　　　 ﾘ | ");
+                Console.WriteLine("　　    |`^ ^′　   ﾊノ ");
+                Console.WriteLine("　     　`ｨニﾆァ　 / | ");
+                Console.WriteLine("          ヽﾆノ　／　|＿_ ");
+                Console.WriteLine("　　     ／`ー―′　 丶 ＼ ");
+                Console.WriteLine("　      ／￣￣＼＼　　 |   ");
+                Console.WriteLine("      `/　　　　丶＼＿ノ   ");
+                Console.WriteLine("      ｜　　)(　 |         ");
+                Console.WriteLine("      ｜　　⌒　 |　 /￣丶 ");
+                Console.WriteLine("      ｜　　　丶ノ　｜　 | ");
+                Console.WriteLine("       丶　　　 ￣￣￣　ノ ");
+                Console.WriteLine("　      ＼　　　　　 ／    ");
+                Console.WriteLine("　　      ＼＿＿＿＿／     ");
+                Console.WriteLine("");
+                Console.WriteLine("사람이 너무 바로 앞에 있었습니다!! 들킨 것 같습니다!!");
+                Console.WriteLine("");
+                Console.WriteLine("사람 : 너 이자식 누구야!!!! ");
+                Console.WriteLine("");
+                Console.WriteLine("!!!!!!!!!!!! 나가야합니다. (벌렁벌렁)");
+                Console.WriteLine("");
+                Console.WriteLine("두 번째 집은 실패입니다. ㅠㅠ ");
+            }
+            else if (rr == "창문")
+            {
+                Console.Clear();
+                Console.WriteLine("");
+                Console.WriteLine("        ／￣￣￣￣＼ ");
+                Console.WriteLine("　　    /／￣￣~＼　｜ ");
+                Console.WriteLine("　　    V―　      丿｜ ");
+                Console.WriteLine("　　    |丶〉 /丶   /､ ");
+                Console.WriteLine("　　    | /　　　　 ﾘ | ");
+                Console.WriteLine("　　    |`^ ^′　   ﾊノ ");
+                Console.WriteLine("　     　`ｨニﾆァ　 / | ");
+                Console.WriteLine("          ヽﾆノ　／　|＿_ ");
+                Console.WriteLine("　　     ／`ー―′　 丶 ＼ ");
+                Console.WriteLine("　      ／￣￣＼＼　　 |   ");
+                Console.WriteLine("      `/　　　　丶＼＿ノ   ");
+                Console.WriteLine("      ｜　　)(　 |         ");
+                Console.WriteLine("      ｜　　⌒　 |　 /￣丶 ");
+                Console.WriteLine("      ｜　　　丶ノ　｜　 | ");
+                Console.WriteLine("       丶　　　 ￣￣￣　ノ ");
+                Console.WriteLine("　      ＼　　　　　 ／    ");
+                Console.WriteLine("　　      ＼＿＿＿＿／     ");
+                Console.WriteLine("");
+                Console.WriteLine("사람이 너무 바로 앞에 있었습니다!! 들킨 것 같습니다!!");
+                Console.WriteLine("");
+                Console.WriteLine("사람 : 너 이자식 누구야!!!! ");
+                Console.WriteLine("");
+                Console.WriteLine("!!!!!!!!!!!! 나가야합니다. (벌렁벌렁)");
+                Console.WriteLine("");
+                Console.WriteLine("두 번째 집은 실패입니다. ㅠㅠ ");
+            }
+            else
+            {
+                Console.WriteLine("잘 읽어보세요");
+                string oo = Console.ReadLine();
+                if(oo=="문")
+                {
+                        Console.Clear();
+                        Console.WriteLine("");
+                        Console.WriteLine("        ／￣￣￣￣＼ ");
+                        Console.WriteLine("　　    /／￣￣~＼　｜ ");
+                        Console.WriteLine("　　    V―　      丿｜ ");
+                        Console.WriteLine("　　    |丶〉 /丶   /､ ");
+                        Console.WriteLine("　　    | /　　　　 ﾘ | ");
+                        Console.WriteLine("　　    |`^ ^′　   ﾊノ ");
+                        Console.WriteLine("　     　`ｨニﾆァ　 / | ");
+                        Console.WriteLine("          ヽﾆノ　／　|＿_ ");
+                        Console.WriteLine("　　     ／`ー―′　 丶 ＼ ");
+                        Console.WriteLine("　      ／￣￣＼＼　　 |   ");
+                        Console.WriteLine("      `/　　　　丶＼＿ノ   ");
+                        Console.WriteLine("      ｜　　)(　 |         ");
+                        Console.WriteLine("      ｜　　⌒　 |　 /￣丶 ");
+                        Console.WriteLine("      ｜　　　丶ノ　｜　 | ");
+                        Console.WriteLine("       丶　　　 ￣￣￣　ノ ");
+                        Console.WriteLine("　      ＼　　　　　 ／    ");
+                        Console.WriteLine("　　      ＼＿＿＿＿／     ");
+                        Console.WriteLine("");
+                        Console.WriteLine("사람이 너무 바로 앞에 있었습니다!! 들킨 것 같습니다!!");
+                        Console.WriteLine("");
+                        Console.WriteLine("사람 : 너 이자식 누구야!!!! ");
+                        Console.WriteLine("");
+                        Console.WriteLine("!!!!!!!!!!!! 나가야합니다. (벌렁벌렁)");
+                        Console.WriteLine("");
+                        Console.WriteLine("두 번째 집은 실패입니다. ㅠㅠ ");
+                }
+                else if(oo=="창문")
+                {
+
+                        Console.Clear();
+                        Console.WriteLine("");
+                        Console.WriteLine("        ／￣￣￣￣＼ ");
+                        Console.WriteLine("　　    /／￣￣~＼　｜ ");
+                        Console.WriteLine("　　    V―　      丿｜ ");
+                        Console.WriteLine("　　    |丶〉 /丶   /､ ");
+                        Console.WriteLine("　　    | /　　　　 ﾘ | ");
+                        Console.WriteLine("　　    |`^ ^′　   ﾊノ ");
+                        Console.WriteLine("　     　`ｨニﾆァ　 / | ");
+                        Console.WriteLine("          ヽﾆノ　／　|＿_ ");
+                        Console.WriteLine("　　     ／`ー―′　 丶 ＼ ");
+                        Console.WriteLine("　      ／￣￣＼＼　　 |   ");
+                        Console.WriteLine("      `/　　　　丶＼＿ノ   ");
+                        Console.WriteLine("      ｜　　)(　 |         ");
+                        Console.WriteLine("      ｜　　⌒　 |　 /￣丶 ");
+                        Console.WriteLine("      ｜　　　丶ノ　｜　 | ");
+                        Console.WriteLine("       丶　　　 ￣￣￣　ノ ");
+                        Console.WriteLine("　      ＼　　　　　 ／    ");
+                        Console.WriteLine("　　      ＼＿＿＿＿／     ");
+                        Console.WriteLine("");
+                        Console.WriteLine("사람이 너무 바로 앞에 있었습니다!! 들킨 것 같습니다!!");
+                        Console.WriteLine("");
+                        Console.WriteLine("사람 : 너 이자식 누구야!!!! ");
+                        Console.WriteLine("");
+                        Console.WriteLine("!!!!!!!!!!!! 나가야합니다. (벌렁벌렁)");
+                        Console.WriteLine("");
+                        Console.WriteLine("두 번째 집은 실패입니다. ㅠㅠ ");
+                   
+                }
+                else
+                {
+                    no();
+                }
+            }  
+
+
+            String __ = Console.ReadLine();
+            Console.Clear();
+            Console.WriteLine("마지막 집에 도착하였습니다. ");
+            Console.WriteLine("");
+            Console.WriteLine("  * ˚ ˚ * ˚    Π  *  ˚ ˛  *   *    ");
+            Console.WriteLine("  ˚ ˛ *    ˚ ˚Π˛ ˚ ˛ *    *        ");
+            Console.WriteLine("   ° 。 ° ˚* __Π____* 。 *   ˚ *     ");
+            Console.WriteLine(" ˚ ˚ ˛* * */______/~＼ 。˚ ˚ ˛  * ");
+            Console.WriteLine("     *___˛ *｜ 田田 ｜ ｜   ˚ ____    ");
+            Console.WriteLine("  * ˚------     *  *    ------- ˚ *   *    ");
+            Console.WriteLine("  ˚ ˛ *    ˚ ˚ ˛ ˚ ˛ *  *        ");
+            Console.WriteLine("");
+            Console.WriteLine("선물을 주고 와야합니다. 이곳은 굴뚝이 아주 높네요. 창문은 떨어질 듯한 모습의 수상한 집입니다. (굴뚝 / 창문)");
+
+            string qq = Console.ReadLine();
+            if (qq == "굴뚝")
+            {
+                Console.Clear();
+                Console.WriteLine("");
+                Console.WriteLine("당신은 긴 굴뚝으로 조심히 들어갑니다.");
+                Console.WriteLine("");
+                Console.WriteLine("■■■■■■■■■■■■■■■■■■■■■■■■");
+                Console.WriteLine("■■■■----------------■■■■");
+                Console.WriteLine("■■■|   ___|    ___| |■■■");
+                Console.WriteLine("■■■■----------------■■■■");
+                Console.WriteLine("■■■■|  |     |     |■■■■");
+                Console.WriteLine("■■■■|    |     |   |■■■■");
+                Console.WriteLine("■■■■| |      |     |■■■■");
+                Console.WriteLine("■■■■|    |     |   |■■■■");
+                Console.WriteLine("■■■■|   |    |     |■■■■");
+                Console.WriteLine("■■■■|  |     |     |■■■■");
+                Console.WriteLine("■■■■|    |     |   |■■■■");
+                Console.WriteLine("■■■■| |      |     |■■■■");
+                Console.WriteLine("■■■■|    |     |   |■■■■");
+                Console.WriteLine("■■■■|   |    |     |■■■■");
+                Console.WriteLine("■■■■|  |     |     |■■■■");
+                Console.WriteLine("■■■■|    |     |   |■■■■");
+                Console.WriteLine("■■■■| |      |     |■■■■");
+                Console.WriteLine("■■■■|    |     |   |■■■■");
+                Console.WriteLine("■■■■|   |    |     |■■■■");
+                Console.WriteLine("■■■■|  |     |     |■■■■");
+                Console.WriteLine("■■■■|    |     |   |■■■■");
+                Console.WriteLine("■■■■| |      |     |■■■■");
+                Console.WriteLine("■■■■|    |     |   |■■■■");
+                Console.WriteLine("■■■■|   |    |     |■■■■");
+                Console.WriteLine("");
+                Console.WriteLine("조심 조심 조심 조심 조심 조심 조심");
+                Console.WriteLine("");
+                String ____ = Console.ReadLine();
+                Console.Clear();
+                Console.WriteLine("이곳은 좀 음산합니다. 이상한 냄새도 납니다. ");
+                Console.WriteLine("");
+                Console.WriteLine("어서 선물을 놓고 와야겠습니다. ");
+                Console.WriteLine("");
+                Console.WriteLine("(콜록 콜록 콜록)  ? 어디서 기침 소리가 들립니다. ");
+                Console.WriteLine("");
+                Console.WriteLine("     |￣( ´Д｀)￣|");
+                Console.WriteLine("     |＼⌒⌒⌒⌒⌒⌒＼");
+                Console.WriteLine("     |　＼⌒⌒⌒⌒⌒⌒＼");
+                Console.WriteLine("     ＼　 ⌒⌒⌒⌒⌒⌒⌒ |");
+                Console.WriteLine("　      ＼|＿＿＿＿＿＿＿_|");
+                Console.WriteLine("");
+                Console.WriteLine("!!!!! 사람이 누워있습니다. 매우 아파보이는군요. 선물이 필요없어보입니다. ");
+                Console.WriteLine("");
+                Console.WriteLine("마음이 좋지 않은 채 나가려고 합니다. 씁쓸합니다.... 뒤로 돌던 그때! ");
+                Console.WriteLine("");
+                Console.WriteLine("　　  ＿＿＿＿ ");
+                Console.WriteLine("　  ／;;;;;;;; ＼ ");
+                Console.WriteLine("　 /;;;;;;;;     ＼ ");
+                Console.WriteLine("  /:／／　　　  ＼｜ ");
+                Console.WriteLine(" ｜/　　(･)　(･)  ｜ ");
+                Console.WriteLine("(6　　　　 つ　    ｜ ");
+                Console.WriteLine(" ｜　　  ＿＿＿　  ｜ ");
+                Console.WriteLine("  ＼　　    ,     ／ ");
+                Console.WriteLine("　　＼＿＿＿＿＿／");
+                Console.WriteLine("");
+                Console.WriteLine("꼬마가 있습니다!! 이런 제대로 들켜버렸습니다. ");
+                Console.WriteLine("");
+                String _______ = Console.ReadLine();
+                Console.Clear();
+                Console.WriteLine("꼬마 : 산타 맞죠....? 제발 소원 한번만 들어주세요...ㅠㅠ");
+                Console.WriteLine("");
+                Console.WriteLine("무슨 일인걸까요? 선물이 아닌 소원을 빌고 있습니다. 들어주시겠습니까? (예 / 아니요)");
+
+                string ew = Console.ReadLine();
+                if (ew == "예")
+                {
+                    Console.WriteLine("");
+                    Console.WriteLine("당신 : 무슨 일이니 꼬마야.... ");
+                    Console.WriteLine("");
+                    Console.WriteLine("꼬마 : 저희 아버지가 편찮으세요... 제발 낫게 해주세요.... 행복한 크리스마스를 보내고 싶어요.... ");
+                    Console.WriteLine("");
+                    Console.WriteLine("저런.... 너무 안타깝습니다.");
+                    Console.WriteLine("");
+                    Console.WriteLine("당신 : 꼬마야... 소원을 들어줄 수는 없단다... 대신 약을 선물로 줄게....");
+                    Console.WriteLine("");
+                    Console.WriteLine("약을 받은 꼬마는 곧장 아버지에게 가서 약을 먹인다. 약을 먹은 아버지는 마법처럼 바로 나았다!!!");
+                    Console.WriteLine("마법의 약이었나 아님 꼬마의 바람때문인지는 잘 모르겠지만 건강을 되찮은 모습이다.");
+                    Console.WriteLine("");
+                    Console.WriteLine("꼬마 : !!! 감사합니다. 산타를 보았다고는 아무에게도 말하지 않을게요!!");
+                    Console.WriteLine("");
+                    Console.WriteLine("당신 : 원래 날 본다면 데려가야 하지만 너는 데려가지 못하겠다... 아버지를 잘 모시고 있으렴");
+                    Console.WriteLine("       그럼 이만!");
+                    Console.WriteLine("");
+                    Console.WriteLine("세 번째 집 선물 전달을 완료하였습니다. ");
+                    String ______ = Console.ReadLine();
+                    Console.Clear();
+                    Console.WriteLine("");
+                    Console.WriteLine("산타 : 자네 어떤가? 여러 집을 돌아다니면서 느낀 점이 있나?");
+                    Console.WriteLine("");
+                    Console.WriteLine("당신 : 행복해 보이는 집도 사연 있는 집도 보니 좀 씁쓸합니다.....");
+                    Console.WriteLine("");
+                    Console.WriteLine("산타 : 이번 기회로 크리스마스가 모두에게 있어 행복만 한 날이 될 수 있다는 것을 느꼈으면 좋겠군!!");
+                    Console.WriteLine("       이제 가 보아도 좋네!! 당신도 행복한 크리스마스를 보내라구!!");
+                    Console.WriteLine("       자 눈을 3초 동안 감고 다시 떠보게 ");
+                    Console.WriteLine("");
+                    Console.WriteLine("당신은 눈을 3초 동안 감고 떠 보았다. ");
+                    Console.WriteLine("");
+                    Console.WriteLine("!!!!!! 당신의 침대로 돌아왔습니다. 이것은 꿈일까요?  ");
+                    Console.WriteLine("");
+                    Console.WriteLine("엄마 : 케빈~~~~ 내려와서 케익 먹어야지!!");
+                    Console.WriteLine("");
+                    Console.WriteLine("?????? 왜 집에.... 일단 내려가봅니다.. ");
+                    Console.WriteLine("");
+                    Console.WriteLine("당신은 가족과 함께 케익을 먹고 행복한 크리스마스를 보냈습니다.");
+                    Console.WriteLine("");
+                    Console.WriteLine("이번 크리스마스에는 가족의 소중함과 크리스마스의 의미를 더욱 깊게 깨닫게 되는 날이 되었습니다.");
+                    Console.WriteLine("");
+                    String ________ = Console.ReadLine();
+                    Console.Clear();
+                    Console.WriteLine("");
+                    Console.WriteLine("___  ___                           _____  _            _       _      ");
+                    Console.WriteLine("|  |/  |                          /  __ || |          (_)     | |           ");
+                    Console.WriteLine("| .  . |  ___  _ __  _ __  _   _  | /  |/| |__   _ __  _  ___ | |_  _ __ ___    __");
+                    Console.WriteLine("| ||/| | / _ || '__|| '__|| | | | | |    | '_ | | '__|| |/ __|| __|| '_ ` _ |  / _` |/ __|");
+                    Console.WriteLine("| |  | ||  __/| |   | |   | |_| | | |__/|| | | || |   | ||__ || |_ | | | | | || (_| ||__ |");
+                    Console.WriteLine("|_|  |_/ |___||_|   |_|    |__, |  |____/|_| |_||_|   |_||___/ |__||_| |_| |_| |__,_||___/");
+                    Console.WriteLine("                            __/ |      ");
+                    Console.WriteLine("                           |___/                  ");
+                    Console.WriteLine("");
+
+                }
+                else if (ew == "아니요")
+                {
+                    Console.WriteLine("");
+                    Console.WriteLine("꼬마의 이야기를 듣지 않고 선물을 전달했습니다. ");
+                    Console.WriteLine("");
+                    Console.WriteLine("산타 : 자네 어떤가? 여러 집을 돌아다니면서 느낀 점이 있나?");
+                    Console.WriteLine("");
+                    Console.WriteLine("당신 : 행복해 보이는 집도 사연 있는 집도 보니 좀 씁쓸합니다.....");
+                    Console.WriteLine("");
+                    Console.WriteLine("산타 : 이번 기회로 크리스마스가 모두에게 있어 행복만 한 날이 될 수 있다는 것을 느꼈으면 좋겠군!!");
+                    Console.WriteLine("       이제 가 보아도 좋네!! 당신도 행복한 크리스마스를 보내라구!!");
+                    Console.WriteLine("       자 눈을 3초 동안 감고 다시 떠보게 ");
+                    Console.WriteLine("");
+                    Console.WriteLine("당신은 눈을 3초 동안 감고 떠 보았다. ");
+                    Console.WriteLine("");
+                    Console.WriteLine("!!!!!! 당신의 침대로 돌아왔습니다. 이것은 꿈일까요?  ");
+                    Console.WriteLine("");
+                    Console.WriteLine("엄마 : 케빈~~~~ 내려와서 케익 먹어야지!!");
+                    Console.WriteLine("");
+                    Console.WriteLine("?????? 왜 집에.... 일단 내려가봅니다.. ");
+                    Console.WriteLine("");
+                    Console.WriteLine("당신은 가족과 함께 케익을 먹고 행복한 크리스마스를 보냈습니다.");
+                    Console.WriteLine("");
+                    Console.WriteLine("이번 크리스마스에는 가족의 소중함과 크리스마스의 의미를 더욱 깊게 깨닫게 되는 날이 되었습니다.");
+                    Console.WriteLine("");
+                    String ________ = Console.ReadLine();
+                    Console.Clear();
+                    Console.WriteLine("");
+                    Console.WriteLine("___  ___                           _____  _            _       _      ");
+                    Console.WriteLine("|  |/  |                          /  __ || |          (_)     | |           ");
+                    Console.WriteLine("| .  . |  ___  _ __  _ __  _   _  | /  |/| |__   _ __  _  ___ | |_  _ __ ___    __");
+                    Console.WriteLine("| ||/| | / _ || '__|| '__|| | | | | |    | '_ | | '__|| |/ __|| __|| '_ ` _ |  / _` |/ __|");
+                    Console.WriteLine("| |  | ||  __/| |   | |   | |_| | | |__/|| | | || |   | ||__ || |_ | | | | | || (_| ||__ |");
+                    Console.WriteLine("|_|  |_/ |___||_|   |_|    |__, |  |____/|_| |_||_|   |_||___/ |__||_| |_| |_| |__,_||___/");
+                    Console.WriteLine("                            __/ |      ");
+                    Console.WriteLine("                           |___/                  ");
+                    Console.WriteLine("");
+                }
+                else
+                {
+                    Console.WriteLine("잘 읽어보세요");
+                    string oo = Console.ReadLine();
+                    if (oo == "예")
+                    {
+                        Console.WriteLine("");
+                        Console.WriteLine("당신 : 무슨 일이니 꼬마야.... ");
+                        Console.WriteLine("");
+                        Console.WriteLine("꼬마 : 저희 아버지가 편찮으세요... 제발 낫게 해주세요.... 행복한 크리스마스를 보내고 싶어요.... ");
+                        Console.WriteLine("");
+                        Console.WriteLine("저런.... 너무 안타깝습니다.");
+                        Console.WriteLine("");
+                        Console.WriteLine("당신 : 꼬마야... 소원을 들어줄 수는 없단다... 대신 약을 선물로 줄게....");
+                        Console.WriteLine("");
+                        Console.WriteLine("약을 받은 꼬마는 곧장 아버지에게 가서 약을 먹인다. 약을 먹은 아버지는 마법처럼 바로 나았다!!!");
+                        Console.WriteLine("마법의 약이었나 아님 꼬마의 바람때문인지는 잘 모르겠지만 건강을 되찮은 모습이다.");
+                        Console.WriteLine("");
+                        Console.WriteLine("꼬마 : !!! 감사합니다. 산타를 보았다고는 아무에게도 말하지 않을게요!!");
+                        Console.WriteLine("");
+                        Console.WriteLine("당신 : 원래 날 본다면 데려가야 하지만 너는 데려가지 못하겠다... 아버지를 잘 모시고 있으렴");
+                        Console.WriteLine("       그럼 이만!");
+                        Console.WriteLine("");
+                        Console.WriteLine("세 번째 집 선물 전달을 완료하였습니다. ");
+                        String ______ = Console.ReadLine();
+                        Console.Clear();
+                        Console.WriteLine("");
+                        Console.WriteLine("산타 : 자네 어떤가? 여러 집을 돌아다니면서 느낀 점이 있나?");
+                        Console.WriteLine("");
+                        Console.WriteLine("당신 : 행복해 보이는 집도 사연 있는 집도 보니 좀 씁쓸합니다.....");
+                        Console.WriteLine("");
+                        Console.WriteLine("산타 : 이번 기회로 크리스마스가 모두에게 있어 행복만 한 날이 될 수 있다는 것을 느꼈으면 좋겠군!!");
+                        Console.WriteLine("       이제 가 보아도 좋네!! 당신도 행복한 크리스마스를 보내라구!!");
+                        Console.WriteLine("       자 눈을 3초 동안 감고 다시 떠보게 ");
+                        Console.WriteLine("");
+                        Console.WriteLine("당신은 눈을 3초 동안 감고 떠 보았다. ");
+                        Console.WriteLine("");
+                        Console.WriteLine("!!!!!! 당신의 침대로 돌아왔습니다. 이것은 꿈일까요?  ");
+                        Console.WriteLine("");
+                        Console.WriteLine("엄마 : 케빈~~~~ 내려와서 케익 먹어야지!!");
+                        Console.WriteLine("");
+                        Console.WriteLine("?????? 왜 집에.... 일단 내려가봅니다.. ");
+                        Console.WriteLine("");
+                        Console.WriteLine("당신은 가족과 함께 케익을 먹고 행복한 크리스마스를 보냈습니다.");
+                        Console.WriteLine("");
+                        Console.WriteLine("이번 크리스마스에는 가족의 소중함과 크리스마스의 의미를 더욱 깊게 깨닫게 되는 날이 되었습니다.");
+                        Console.WriteLine("");
+                        String ________ = Console.ReadLine();
+                        Console.Clear();
+                        Console.WriteLine("");
+                        Console.WriteLine("___  ___                           _____  _            _       _      ");
+                        Console.WriteLine("|  |/  |                          /  __ || |          (_)     | |           ");
+                        Console.WriteLine("| .  . |  ___  _ __  _ __  _   _  | /  |/| |__   _ __  _  ___ | |_  _ __ ___    __");
+                        Console.WriteLine("| ||/| | / _ || '__|| '__|| | | | | |    | '_ | | '__|| |/ __|| __|| '_ ` _ |  / _` |/ __|");
+                        Console.WriteLine("| |  | ||  __/| |   | |   | |_| | | |__/|| | | || |   | ||__ || |_ | | | | | || (_| ||__ |");
+                        Console.WriteLine("|_|  |_/ |___||_|   |_|    |__, |  |____/|_| |_||_|   |_||___/ |__||_| |_| |_| |__,_||___/");
+                        Console.WriteLine("                            __/ |      ");
+                        Console.WriteLine("                           |___/                  ");
+                        Console.WriteLine("");
+                    }
+                    else if (oo == "아니요")
+                    {
+                        Console.WriteLine("");
+                        Console.WriteLine("꼬마의 이야기를 듣지 않고 선물을 전달했습니다. ");
+                        Console.WriteLine("");
+                        Console.WriteLine("산타 : 자네 어떤가? 여러 집을 돌아다니면서 느낀 점이 있나?");
+                        Console.WriteLine("");
+                        Console.WriteLine("당신 : 행복해 보이는 집도 사연 있는 집도 보니 좀 씁쓸합니다.....");
+                        Console.WriteLine("");
+                        Console.WriteLine("산타 : 이번 기회로 크리스마스가 모두에게 있어 행복만 한 날이 될 수 있다는 것을 느꼈으면 좋겠군!!");
+                        Console.WriteLine("       이제 가 보아도 좋네!! 당신도 행복한 크리스마스를 보내라구!!");
+                        Console.WriteLine("       자 눈을 3초 동안 감고 다시 떠보게 ");
+                        Console.WriteLine("");
+                        Console.WriteLine("당신은 눈을 3초 동안 감고 떠 보았다. ");
+                        Console.WriteLine("");
+                        Console.WriteLine("!!!!!! 당신의 침대로 돌아왔습니다. 이것은 꿈일까요?  ");
+                        Console.WriteLine("");
+                        Console.WriteLine("엄마 : 케빈~~~~ 내려와서 케익 먹어야지!!");
+                        Console.WriteLine("");
+                        Console.WriteLine("?????? 왜 집에.... 일단 내려가봅니다.. ");
+                        Console.WriteLine("");
+                        Console.WriteLine("당신은 가족과 함께 케익을 먹고 행복한 크리스마스를 보냈습니다.");
+                        Console.WriteLine("");
+                        Console.WriteLine("이번 크리스마스에는 가족의 소중함과 크리스마스의 의미를 더욱 깊게 깨닫게 되는 날이 되었습니다.");
+                        Console.WriteLine("");
+                        String ________ = Console.ReadLine();
+                        Console.Clear();
+                        Console.WriteLine("");
+                        Console.WriteLine("___  ___                           _____  _            _       _      ");
+                        Console.WriteLine("|  |/  |                          /  __ || |          (_)     | |           ");
+                        Console.WriteLine("| .  . |  ___  _ __  _ __  _   _  | /  |/| |__   _ __  _  ___ | |_  _ __ ___    __");
+                        Console.WriteLine("| ||/| | / _ || '__|| '__|| | | | | |    | '_ | | '__|| |/ __|| __|| '_ ` _ |  / _` |/ __|");
+                        Console.WriteLine("| |  | ||  __/| |   | |   | |_| | | |__/|| | | || |   | ||__ || |_ | | | | | || (_| ||__ |");
+                        Console.WriteLine("|_|  |_/ |___||_|   |_|    |__, |  |____/|_| |_||_|   |_||___/ |__||_| |_| |_| |__,_||___/");
+                        Console.WriteLine("                            __/ |      ");
+                        Console.WriteLine("                           |___/                  ");
+                        Console.WriteLine("");
+                    }
+                    else
+                    {
+                        no();
+                    }
+                }
+            }
+            else if (qq == "창문")
+            {
+                Console.Clear();
+                Console.WriteLine("");
+                Console.WriteLine("당신은 허름한 창문으로 조심히 들어갑니다.");
+                Console.WriteLine("");
+                Console.WriteLine("==============================");
+                Console.WriteLine("|| |=========|  |=========| ||");
+                Console.WriteLine("|| |         |  |         | ||");
+                Console.WriteLine("|| |=========|  |=========| ||");
+                Console.WriteLine("|| |=========|  |=========| ||");
+                Console.WriteLine("|| |         |  |         | ||");
+                Console.WriteLine("|| |=========|  |=========| ||");
+                Console.WriteLine("==============================");
+                Console.WriteLine("");
+                Console.WriteLine("조심 조심 조심 조심 조심 조심 조심");
+                Console.WriteLine("");
+                String ____ = Console.ReadLine();
+                Console.Clear();
+                Console.WriteLine("이곳은 좀 음산합니다. 이상한 냄새도 납니다. ");
+                Console.WriteLine("");
+                Console.WriteLine("어서 선물을 놓고 와야겠습니다. ");
+                Console.WriteLine("");
+                Console.WriteLine("(콜록 콜록 콜록)  ? 어디서 기침 소리가 들립니다. ");
+                Console.WriteLine("");
+                Console.WriteLine("     |￣￣( ´Д｀)￣|");
+                Console.WriteLine("     |＼⌒⌒⌒⌒⌒⌒  ＼");
+                Console.WriteLine("     |　 ＼⌒⌒⌒⌒⌒⌒  ＼");
+                Console.WriteLine("     ＼　 ｜⌒⌒⌒⌒⌒⌒⌒ |");
+                Console.WriteLine("　      ＼ |＿＿＿＿＿＿＿_|");
+                Console.WriteLine("");
+                Console.WriteLine("!!!!! 사람이 누워있습니다. 매우 아파보이는군요. 선물이 필요없어보입니다. ");
+                Console.WriteLine("");
+                Console.WriteLine("마음이 좋지 않은 채 나가려고 합니다. 씁쓸합니다.... 뒤로 돌던 그때! ");
+                Console.WriteLine("");
+                Console.WriteLine("　　  ＿＿＿＿ ");
+                Console.WriteLine("　  ／;;;;;;;; ＼ ");
+                Console.WriteLine("　 /;;;;;;;;     ＼ ");
+                Console.WriteLine("  /:／／　　　  ＼｜ ");
+                Console.WriteLine(" ｜/　　(･)　(･)  ｜ ");
+                Console.WriteLine("(6　　　　 つ　    ｜ ");
+                Console.WriteLine(" ｜　　  ＿＿＿　  ｜ ");
+                Console.WriteLine("  ＼　　    ,     ／ ");
+                Console.WriteLine("　　＼＿＿＿＿＿／");
+                Console.WriteLine("");
+                Console.WriteLine("꼬마가 있습니다!! 이런 제대로 들켜버렸습니다. ");
+                Console.WriteLine("");
+                String _______ = Console.ReadLine();
+                Console.Clear();
+                Console.WriteLine("꼬마 : 산타 맞죠....? 제발 소원 한번만 들어주세요...ㅠㅠ");
+                Console.WriteLine("");
+                Console.WriteLine("무슨 일인걸까요? 선물이 아닌 소원을 빌고 있습니다. 들어주시겠습니까? (예 / 아니요)");
+
+                string ew = Console.ReadLine();
+                if (ew == "예")
+                {
+                    Console.WriteLine("");
+                    Console.WriteLine("당신 : 무슨 일이니 꼬마야.... ");
+                    Console.WriteLine("");
+                    Console.WriteLine("꼬마 : 저희 아버지가 편찮으세요... 제발 낫게 해주세요.... 행복한 크리스마스를 보내고 싶어요.... ");
+                    Console.WriteLine("");
+                    Console.WriteLine("저런.... 너무 안타깝습니다.");
+                    Console.WriteLine("");
+                    Console.WriteLine("당신 : 꼬마야... 소원을 들어줄 수는 없단다... 대신 약을 선물로 줄게....");
+                    Console.WriteLine("");
+                    Console.WriteLine("약을 받은 꼬마는 곧장 아버지에게 가서 약을 먹인다. 약을 먹은 아버지는 마법처럼 바로 나았다!!!");
+                    Console.WriteLine("마법의 약이었나 아님 꼬마의 바람때문인지는 잘 모르겠지만 건강을 되찮은 모습이다.");
+                    Console.WriteLine("");
+                    Console.WriteLine("꼬마 : !!! 감사합니다. 산타를 보았다고는 아무에게도 말하지 않을게요!!");
+                    Console.WriteLine("");
+                    Console.WriteLine("당신 : 원래 날 본다면 데려가야 하지만 너는 데려가지 못하겠다... 아버지를 잘 모시고 있으렴");
+                    Console.WriteLine("       그럼 이만!");
+                    Console.WriteLine("");
+                    Console.WriteLine("세 번째 집 선물 전달을 완료하였습니다. ");
+                    String ______ = Console.ReadLine();
+                    Console.Clear();
+                    Console.WriteLine("");
+                    Console.WriteLine("산타 : 자네 어떤가? 여러 집을 돌아다니면서 느낀 점이 있나?");
+                    Console.WriteLine("");
+                    Console.WriteLine("당신 : 행복해 보이는 집도 사연 있는 집도 보니 좀 씁쓸합니다.....");
+                    Console.WriteLine("");
+                    Console.WriteLine("산타 : 이번 기회로 크리스마스가 모두에게 있어 행복만 한 날이 될 수 있다는 것을 느꼈으면 좋겠군!!");
+                    Console.WriteLine("       이제 가 보아도 좋네!! 당신도 행복한 크리스마스를 보내라구!!");
+                    Console.WriteLine("       자 눈을 3초 동안 감고 다시 떠보게 ");
+                    Console.WriteLine("");
+                    Console.WriteLine("당신은 눈을 3초 동안 감고 떠 보았다. ");
+                    Console.WriteLine("");
+                    Console.WriteLine("!!!!!! 당신의 침대로 돌아왔습니다. 이것은 꿈일까요?  ");
+                    Console.WriteLine("");
+                    Console.WriteLine("엄마 : 케빈~~~~ 내려와서 케익 먹어야지!!");
+                    Console.WriteLine("");
+                    Console.WriteLine("?????? 왜 집에.... 일단 내려가봅니다.. ");
+                    Console.WriteLine("");
+                    Console.WriteLine("당신은 가족과 함께 케익을 먹고 행복한 크리스마스를 보냈습니다.");
+                    Console.WriteLine("");
+                    Console.WriteLine("이번 크리스마스에는 가족의 소중함과 크리스마스의 의미를 더욱 깊게 깨닫게 되는 날이 되었습니다.");
+                    Console.WriteLine("");
+                    String ________ = Console.ReadLine();
+                    Console.Clear();
+                    Console.WriteLine("");
+                    Console.WriteLine("___  ___                           _____  _            _       _      ");
+                    Console.WriteLine("|  |/  |                          /  __ || |          (_)     | |           ");
+                    Console.WriteLine("| .  . |  ___  _ __  _ __  _   _  | /  |/| |__   _ __  _  ___ | |_  _ __ ___    __");
+                    Console.WriteLine("| ||/| | / _ || '__|| '__|| | | | | |    | '_ | | '__|| |/ __|| __|| '_ ` _ |  / _` |/ __|");
+                    Console.WriteLine("| |  | ||  __/| |   | |   | |_| | | |__/|| | | || |   | ||__ || |_ | | | | | || (_| ||__ |");
+                    Console.WriteLine("|_|  |_/ |___||_|   |_|    |__, |  |____/|_| |_||_|   |_||___/ |__||_| |_| |_| |__,_||___/");
+                    Console.WriteLine("                            __/ |      ");
+                    Console.WriteLine("                           |___/                  ");
+                    Console.WriteLine("");
+
+                }
+                else if (ew == "아니요")
+                {
+                    Console.WriteLine("");
+                    Console.WriteLine("꼬마의 이야기를 듣지 않고 선물을 전달했습니다. ");
+                    Console.WriteLine("");
+                    Console.WriteLine("산타 : 자네 어떤가? 여러 집을 돌아다니면서 느낀 점이 있나?");
+                    Console.WriteLine("");
+                    Console.WriteLine("당신 : 행복해 보이는 집도 사연 있는 집도 보니 좀 씁쓸합니다.....");
+                    Console.WriteLine("");
+                    Console.WriteLine("산타 : 이번 기회로 크리스마스가 모두에게 있어 행복만 한 날이 될 수 있다는 것을 느꼈으면 좋겠군!!");
+                    Console.WriteLine("       이제 가 보아도 좋네!! 당신도 행복한 크리스마스를 보내라구!!");
+                    Console.WriteLine("       자 눈을 3초 동안 감고 다시 떠보게 ");
+                    Console.WriteLine("");
+                    Console.WriteLine("당신은 눈을 3초 동안 감고 떠 보았다. ");
+                    Console.WriteLine("");
+                    Console.WriteLine("!!!!!! 당신의 침대로 돌아왔습니다. 이것은 꿈일까요?  ");
+                    Console.WriteLine("");
+                    Console.WriteLine("엄마 : 케빈~~~~ 내려와서 케익 먹어야지!!");
+                    Console.WriteLine("");
+                    Console.WriteLine("?????? 왜 집에.... 일단 내려가봅니다.. ");
+                    Console.WriteLine("");
+                    Console.WriteLine("당신은 가족과 함께 케익을 먹고 행복한 크리스마스를 보냈습니다.");
+                    Console.WriteLine("");
+                    Console.WriteLine("이번 크리스마스에는 가족의 소중함과 크리스마스의 의미를 더욱 깊게 깨닫게 되는 날이 되었습니다.");
+                    Console.WriteLine("");
+                    String ________ = Console.ReadLine();
+                    Console.Clear();
+                    Console.WriteLine("");
+                    Console.WriteLine("___  ___                           _____  _            _       _      ");
+                    Console.WriteLine("|  |/  |                          /  __ || |          (_)     | |           ");
+                    Console.WriteLine("| .  . |  ___  _ __  _ __  _   _  | /  |/| |__   _ __  _  ___ | |_  _ __ ___    __");
+                    Console.WriteLine("| ||/| | / _ || '__|| '__|| | | | | |    | '_ | | '__|| |/ __|| __|| '_ ` _ |  / _` |/ __|");
+                    Console.WriteLine("| |  | ||  __/| |   | |   | |_| | | |__/|| | | || |   | ||__ || |_ | | | | | || (_| ||__ |");
+                    Console.WriteLine("|_|  |_/ |___||_|   |_|    |__, |  |____/|_| |_||_|   |_||___/ |__||_| |_| |_| |__,_||___/");
+                    Console.WriteLine("                            __/ |      ");
+                    Console.WriteLine("                           |___/                  ");
+                    Console.WriteLine("");
+                }
+                else
+                {
+                    Console.WriteLine("잘 읽어보세요");
+                    string oo = Console.ReadLine();
+                    if (oo == "예")
+                    {
+                        //예
+                    }
+                    else if (oo == "아니요")
+                    {
+                        //아니요
+                    }
+                    else
+                    {
+                        no();
+                    }
+                }
+            }
+            else
+            {
+                Console.WriteLine("잘 읽어보세요");
+                string ll = Console.ReadLine();
+                if (ll == "굴뚝")
+                {
+                        Console.Clear();
+                        Console.WriteLine("");
+                        Console.WriteLine("당신은 긴 굴뚝으로 조심히 들어갑니다.");
+                        Console.WriteLine("");
+                        Console.WriteLine("■■■■■■■■■■■■■■■■■■■■■■■■");
+                        Console.WriteLine("■■■■----------------■■■■");
+                        Console.WriteLine("■■■|   ___|    ___| |■■■");
+                        Console.WriteLine("■■■■----------------■■■■");
+                        Console.WriteLine("■■■■|  |     |     |■■■■");
+                        Console.WriteLine("■■■■|    |     |   |■■■■");
+                        Console.WriteLine("■■■■| |      |     |■■■■");
+                        Console.WriteLine("■■■■|    |     |   |■■■■");
+                        Console.WriteLine("■■■■|   |    |     |■■■■");
+                        Console.WriteLine("■■■■|  |     |     |■■■■");
+                        Console.WriteLine("■■■■|    |     |   |■■■■");
+                        Console.WriteLine("■■■■| |      |     |■■■■");
+                        Console.WriteLine("■■■■|    |     |   |■■■■");
+                        Console.WriteLine("■■■■|   |    |     |■■■■");
+                        Console.WriteLine("■■■■|  |     |     |■■■■");
+                        Console.WriteLine("■■■■|    |     |   |■■■■");
+                        Console.WriteLine("■■■■| |      |     |■■■■");
+                        Console.WriteLine("■■■■|    |     |   |■■■■");
+                        Console.WriteLine("■■■■|   |    |     |■■■■");
+                        Console.WriteLine("■■■■|  |     |     |■■■■");
+                        Console.WriteLine("■■■■|    |     |   |■■■■");
+                        Console.WriteLine("■■■■| |      |     |■■■■");
+                        Console.WriteLine("■■■■|    |     |   |■■■■");
+                        Console.WriteLine("■■■■|   |    |     |■■■■");
+                        Console.WriteLine("");
+                        Console.WriteLine("조심 조심 조심 조심 조심 조심 조심");
+                        Console.WriteLine("");
+                        String ____ = Console.ReadLine();
+                        Console.Clear();
+                        Console.WriteLine("이곳은 좀 음산합니다. 이상한 냄새도 납니다. ");
+                        Console.WriteLine("");
+                        Console.WriteLine("어서 선물을 놓고 와야겠습니다. ");
+                        Console.WriteLine("");
+                        Console.WriteLine("(콜록 콜록 콜록)  ? 어디서 기침 소리가 들립니다. ");
+                        Console.WriteLine("");
+                        Console.WriteLine("     |￣( ´Д｀)￣|");
+                        Console.WriteLine("     |＼⌒⌒⌒⌒⌒⌒＼");
+                        Console.WriteLine("     |　＼⌒⌒⌒⌒⌒⌒＼");
+                        Console.WriteLine("     ＼　 ⌒⌒⌒⌒⌒⌒⌒ |");
+                        Console.WriteLine("　      ＼|＿＿＿＿＿＿＿_|");
+                        Console.WriteLine("");
+                        Console.WriteLine("!!!!! 사람이 누워있습니다. 매우 아파보이는군요. 선물이 필요없어보입니다. ");
+                        Console.WriteLine("");
+                        Console.WriteLine("마음이 좋지 않은 채 나가려고 합니다. 씁쓸합니다.... 뒤로 돌던 그때! ");
+                        Console.WriteLine("");
+                        Console.WriteLine("　　  ＿＿＿＿ ");
+                        Console.WriteLine("　  ／;;;;;;;; ＼ ");
+                        Console.WriteLine("　 /;;;;;;;;     ＼ ");
+                        Console.WriteLine("  /:／／　　　  ＼｜ ");
+                        Console.WriteLine(" ｜/　　(･)　(･)  ｜ ");
+                        Console.WriteLine("(6　　　　 つ　    ｜ ");
+                        Console.WriteLine(" ｜　　  ＿＿＿　  ｜ ");
+                        Console.WriteLine("  ＼　　    ,     ／ ");
+                        Console.WriteLine("　　＼＿＿＿＿＿／");
+                        Console.WriteLine("");
+                        Console.WriteLine("꼬마가 있습니다!! 이런 제대로 들켜버렸습니다. ");
+                        Console.WriteLine("");
+                        String _______ = Console.ReadLine();
+                        Console.Clear();
+                        Console.WriteLine("꼬마 : 산타 맞죠....? 제발 소원 한번만 들어주세요...ㅠㅠ");
+                        Console.WriteLine("");
+                        Console.WriteLine("무슨 일인걸까요? 선물이 아닌 소원을 빌고 있습니다. 들어주시겠습니까? (예 / 아니요)");
+
+                        string ew = Console.ReadLine();
+                        if (ew == "예")
+                        {
+                            Console.WriteLine("");
+                            Console.WriteLine("당신 : 무슨 일이니 꼬마야.... ");
+                            Console.WriteLine("");
+                            Console.WriteLine("꼬마 : 저희 아버지가 편찮으세요... 제발 낫게 해주세요.... 행복한 크리스마스를 보내고 싶어요.... ");
+                            Console.WriteLine("");
+                            Console.WriteLine("저런.... 너무 안타깝습니다.");
+                            Console.WriteLine("");
+                            Console.WriteLine("당신 : 꼬마야... 소원을 들어줄 수는 없단다... 대신 약을 선물로 줄게....");
+                            Console.WriteLine("");
+                            Console.WriteLine("약을 받은 꼬마는 곧장 아버지에게 가서 약을 먹인다. 약을 먹은 아버지는 마법처럼 바로 나았다!!!");
+                            Console.WriteLine("마법의 약이었나 아님 꼬마의 바람때문인지는 잘 모르겠지만 건강을 되찮은 모습이다.");
+                            Console.WriteLine("");
+                            Console.WriteLine("꼬마 : !!! 감사합니다. 산타를 보았다고는 아무에게도 말하지 않을게요!!");
+                            Console.WriteLine("");
+                            Console.WriteLine("당신 : 원래 날 본다면 데려가야 하지만 너는 데려가지 못하겠다... 아버지를 잘 모시고 있으렴");
+                            Console.WriteLine("       그럼 이만!");
+                            Console.WriteLine("");
+                            Console.WriteLine("세 번째 집 선물 전달을 완료하였습니다. ");
+                            String ______ = Console.ReadLine();
+                            Console.Clear();
+                            Console.WriteLine("");
+                            Console.WriteLine("산타 : 자네 어떤가? 여러 집을 돌아다니면서 느낀 점이 있나?");
+                            Console.WriteLine("");
+                            Console.WriteLine("당신 : 행복해 보이는 집도 사연 있는 집도 보니 좀 씁쓸합니다.....");
+                            Console.WriteLine("");
+                            Console.WriteLine("산타 : 이번 기회로 크리스마스가 모두에게 있어 행복만 한 날이 될 수 있다는 것을 느꼈으면 좋겠군!!");
+                            Console.WriteLine("       이제 가 보아도 좋네!! 당신도 행복한 크리스마스를 보내라구!!");
+                            Console.WriteLine("       자 눈을 3초 동안 감고 다시 떠보게 ");
+                            Console.WriteLine("");
+                            Console.WriteLine("당신은 눈을 3초 동안 감고 떠 보았다. ");
+                            Console.WriteLine("");
+                            Console.WriteLine("!!!!!! 당신의 침대로 돌아왔습니다. 이것은 꿈일까요?  ");
+                            Console.WriteLine("");
+                            Console.WriteLine("엄마 : 케빈~~~~ 내려와서 케익 먹어야지!!");
+                            Console.WriteLine("");
+                            Console.WriteLine("?????? 왜 집에.... 일단 내려가봅니다.. ");
+                            Console.WriteLine("");
+                            Console.WriteLine("당신은 가족과 함께 케익을 먹고 행복한 크리스마스를 보냈습니다.");
+                            Console.WriteLine("");
+                            Console.WriteLine("이번 크리스마스에는 가족의 소중함과 크리스마스의 의미를 더욱 깊게 깨닫게 되는 날이 되었습니다.");
+                            Console.WriteLine("");
+                            String ________ = Console.ReadLine();
+                            Console.Clear();
+                            Console.WriteLine("");
+                            Console.WriteLine("___  ___                           _____  _            _       _      ");
+                            Console.WriteLine("|  |/  |                          /  __ || |          (_)     | |           ");
+                            Console.WriteLine("| .  . |  ___  _ __  _ __  _   _  | /  |/| |__   _ __  _  ___ | |_  _ __ ___    __");
+                            Console.WriteLine("| ||/| | / _ || '__|| '__|| | | | | |    | '_ | | '__|| |/ __|| __|| '_ ` _ |  / _` |/ __|");
+                            Console.WriteLine("| |  | ||  __/| |   | |   | |_| | | |__/|| | | || |   | ||__ || |_ | | | | | || (_| ||__ |");
+                            Console.WriteLine("|_|  |_/ |___||_|   |_|    |__, |  |____/|_| |_||_|   |_||___/ |__||_| |_| |_| |__,_||___/");
+                            Console.WriteLine("                            __/ |      ");
+                            Console.WriteLine("                           |___/                  ");
+                            Console.WriteLine("");
+
+                        }
+                        else if (ew == "아니요")
+                        {
+                            Console.WriteLine("");
+                            Console.WriteLine("꼬마의 이야기를 듣지 않고 선물을 전달했습니다. ");
+                            Console.WriteLine("");
+                            Console.WriteLine("산타 : 자네 어떤가? 여러 집을 돌아다니면서 느낀 점이 있나?");
+                            Console.WriteLine("");
+                            Console.WriteLine("당신 : 행복해 보이는 집도 사연 있는 집도 보니 좀 씁쓸합니다.....");
+                            Console.WriteLine("");
+                            Console.WriteLine("산타 : 이번 기회로 크리스마스가 모두에게 있어 행복만 한 날이 될 수 있다는 것을 느꼈으면 좋겠군!!");
+                            Console.WriteLine("       이제 가 보아도 좋네!! 당신도 행복한 크리스마스를 보내라구!!");
+                            Console.WriteLine("       자 눈을 3초 동안 감고 다시 떠보게 ");
+                            Console.WriteLine("");
+                            Console.WriteLine("당신은 눈을 3초 동안 감고 떠 보았다. ");
+                            Console.WriteLine("");
+                            Console.WriteLine("!!!!!! 당신의 침대로 돌아왔습니다. 이것은 꿈일까요?  ");
+                            Console.WriteLine("");
+                            Console.WriteLine("엄마 : 케빈~~~~ 내려와서 케익 먹어야지!!");
+                            Console.WriteLine("");
+                            Console.WriteLine("?????? 왜 집에.... 일단 내려가봅니다.. ");
+                            Console.WriteLine("");
+                            Console.WriteLine("당신은 가족과 함께 케익을 먹고 행복한 크리스마스를 보냈습니다.");
+                            Console.WriteLine("");
+                            Console.WriteLine("이번 크리스마스에는 가족의 소중함과 크리스마스의 의미를 더욱 깊게 깨닫게 되는 날이 되었습니다.");
+                            Console.WriteLine("");
+                            String ________ = Console.ReadLine();
+                            Console.Clear();
+                            Console.WriteLine("");
+                            Console.WriteLine("___  ___                           _____  _            _       _      ");
+                            Console.WriteLine("|  |/  |                          /  __ || |          (_)     | |           ");
+                            Console.WriteLine("| .  . |  ___  _ __  _ __  _   _  | /  |/| |__   _ __  _  ___ | |_  _ __ ___    __");
+                            Console.WriteLine("| ||/| | / _ || '__|| '__|| | | | | |    | '_ | | '__|| |/ __|| __|| '_ ` _ |  / _` |/ __|");
+                            Console.WriteLine("| |  | ||  __/| |   | |   | |_| | | |__/|| | | || |   | ||__ || |_ | | | | | || (_| ||__ |");
+                            Console.WriteLine("|_|  |_/ |___||_|   |_|    |__, |  |____/|_| |_||_|   |_||___/ |__||_| |_| |_| |__,_||___/");
+                            Console.WriteLine("                            __/ |      ");
+                            Console.WriteLine("                           |___/                  ");
+                            Console.WriteLine("");
+                        }
+                        else
+                        {
+                            Console.WriteLine("잘 읽어보세요");
+                            string oo = Console.ReadLine();
+                            if (oo == "예")
+                            {
+                                Console.WriteLine("");
+                                Console.WriteLine("당신 : 무슨 일이니 꼬마야.... ");
+                                Console.WriteLine("");
+                                Console.WriteLine("꼬마 : 저희 아버지가 편찮으세요... 제발 낫게 해주세요.... 행복한 크리스마스를 보내고 싶어요.... ");
+                                Console.WriteLine("");
+                                Console.WriteLine("저런.... 너무 안타깝습니다.");
+                                Console.WriteLine("");
+                                Console.WriteLine("당신 : 꼬마야... 소원을 들어줄 수는 없단다... 대신 약을 선물로 줄게....");
+                                Console.WriteLine("");
+                                Console.WriteLine("약을 받은 꼬마는 곧장 아버지에게 가서 약을 먹인다. 약을 먹은 아버지는 마법처럼 바로 나았다!!!");
+                                Console.WriteLine("마법의 약이었나 아님 꼬마의 바람때문인지는 잘 모르겠지만 건강을 되찮은 모습이다.");
+                                Console.WriteLine("");
+                                Console.WriteLine("꼬마 : !!! 감사합니다. 산타를 보았다고는 아무에게도 말하지 않을게요!!");
+                                Console.WriteLine("");
+                                Console.WriteLine("당신 : 원래 날 본다면 데려가야 하지만 너는 데려가지 못하겠다... 아버지를 잘 모시고 있으렴");
+                                Console.WriteLine("       그럼 이만!");
+                                Console.WriteLine("");
+                                Console.WriteLine("세 번째 집 선물 전달을 완료하였습니다. ");
+                                String ______ = Console.ReadLine();
+                                Console.Clear();
+                                Console.WriteLine("");
+                                Console.WriteLine("산타 : 자네 어떤가? 여러 집을 돌아다니면서 느낀 점이 있나?");
+                                Console.WriteLine("");
+                                Console.WriteLine("당신 : 행복해 보이는 집도 사연 있는 집도 보니 좀 씁쓸합니다.....");
+                                Console.WriteLine("");
+                                Console.WriteLine("산타 : 이번 기회로 크리스마스가 모두에게 있어 행복만 한 날이 될 수 있다는 것을 느꼈으면 좋겠군!!");
+                                Console.WriteLine("       이제 가 보아도 좋네!! 당신도 행복한 크리스마스를 보내라구!!");
+                                Console.WriteLine("       자 눈을 3초 동안 감고 다시 떠보게 ");
+                                Console.WriteLine("");
+                                Console.WriteLine("당신은 눈을 3초 동안 감고 떠 보았다. ");
+                                Console.WriteLine("");
+                                Console.WriteLine("!!!!!! 당신의 침대로 돌아왔습니다. 이것은 꿈일까요?  ");
+                                Console.WriteLine("");
+                                Console.WriteLine("엄마 : 케빈~~~~ 내려와서 케익 먹어야지!!");
+                                Console.WriteLine("");
+                                Console.WriteLine("?????? 왜 집에.... 일단 내려가봅니다.. ");
+                                Console.WriteLine("");
+                                Console.WriteLine("당신은 가족과 함께 케익을 먹고 행복한 크리스마스를 보냈습니다.");
+                                Console.WriteLine("");
+                                Console.WriteLine("이번 크리스마스에는 가족의 소중함과 크리스마스의 의미를 더욱 깊게 깨닫게 되는 날이 되었습니다.");
+                                Console.WriteLine("");
+                                String ________ = Console.ReadLine();
+                                Console.Clear();
+                                Console.WriteLine("");
+                                Console.WriteLine("___  ___                           _____  _            _       _      ");
+                                Console.WriteLine("|  |/  |                          /  __ || |          (_)     | |           ");
+                                Console.WriteLine("| .  . |  ___  _ __  _ __  _   _  | /  |/| |__   _ __  _  ___ | |_  _ __ ___    __");
+                                Console.WriteLine("| ||/| | / _ || '__|| '__|| | | | | |    | '_ | | '__|| |/ __|| __|| '_ ` _ |  / _` |/ __|");
+                                Console.WriteLine("| |  | ||  __/| |   | |   | |_| | | |__/|| | | || |   | ||__ || |_ | | | | | || (_| ||__ |");
+                                Console.WriteLine("|_|  |_/ |___||_|   |_|    |__, |  |____/|_| |_||_|   |_||___/ |__||_| |_| |_| |__,_||___/");
+                                Console.WriteLine("                            __/ |      ");
+                                Console.WriteLine("                           |___/                  ");
+                                Console.WriteLine("");
+                            }
+                            else if (oo == "아니요")
+                            {
+                                Console.WriteLine("");
+                                Console.WriteLine("꼬마의 이야기를 듣지 않고 선물을 전달했습니다. ");
+                                Console.WriteLine("");
+                                Console.WriteLine("산타 : 자네 어떤가? 여러 집을 돌아다니면서 느낀 점이 있나?");
+                                Console.WriteLine("");
+                                Console.WriteLine("당신 : 행복해 보이는 집도 사연 있는 집도 보니 좀 씁쓸합니다.....");
+                                Console.WriteLine("");
+                                Console.WriteLine("산타 : 이번 기회로 크리스마스가 모두에게 있어 행복만 한 날이 될 수 있다는 것을 느꼈으면 좋겠군!!");
+                                Console.WriteLine("       이제 가 보아도 좋네!! 당신도 행복한 크리스마스를 보내라구!!");
+                                Console.WriteLine("       자 눈을 3초 동안 감고 다시 떠보게 ");
+                                Console.WriteLine("");
+                                Console.WriteLine("당신은 눈을 3초 동안 감고 떠 보았다. ");
+                                Console.WriteLine("");
+                                Console.WriteLine("!!!!!! 당신의 침대로 돌아왔습니다. 이것은 꿈일까요?  ");
+                                Console.WriteLine("");
+                                Console.WriteLine("엄마 : 케빈~~~~ 내려와서 케익 먹어야지!!");
+                                Console.WriteLine("");
+                                Console.WriteLine("?????? 왜 집에.... 일단 내려가봅니다.. ");
+                                Console.WriteLine("");
+                                Console.WriteLine("당신은 가족과 함께 케익을 먹고 행복한 크리스마스를 보냈습니다.");
+                                Console.WriteLine("");
+                                Console.WriteLine("이번 크리스마스에는 가족의 소중함과 크리스마스의 의미를 더욱 깊게 깨닫게 되는 날이 되었습니다.");
+                                Console.WriteLine("");
+                                String ________ = Console.ReadLine();
+                                Console.Clear();
+                                Console.WriteLine("");
+                                Console.WriteLine("___  ___                           _____  _            _       _      ");
+                                Console.WriteLine("|  |/  |                          /  __ || |          (_)     | |           ");
+                                Console.WriteLine("| .  . |  ___  _ __  _ __  _   _  | /  |/| |__   _ __  _  ___ | |_  _ __ ___    __");
+                                Console.WriteLine("| ||/| | / _ || '__|| '__|| | | | | |    | '_ | | '__|| |/ __|| __|| '_ ` _ |  / _` |/ __|");
+                                Console.WriteLine("| |  | ||  __/| |   | |   | |_| | | |__/|| | | || |   | ||__ || |_ | | | | | || (_| ||__ |");
+                                Console.WriteLine("|_|  |_/ |___||_|   |_|    |__, |  |____/|_| |_||_|   |_||___/ |__||_| |_| |_| |__,_||___/");
+                                Console.WriteLine("                            __/ |      ");
+                                Console.WriteLine("                           |___/                  ");
+                                Console.WriteLine("");
+                            }
+                            else
+                            {
+                                no();
+                            }
+                        }
+                    }
+                else if (ll == "창문")
+                {
+                    Console.Clear();
+                    Console.WriteLine("");
+                    Console.WriteLine("당신은 허름한 창문으로 조심히 들어갑니다.");
+                    Console.WriteLine("");
+                    Console.WriteLine("==============================");
+                    Console.WriteLine("|| |=========|  |=========| ||");
+                    Console.WriteLine("|| |         |  |         | ||");
+                    Console.WriteLine("|| |=========|  |=========| ||");
+                    Console.WriteLine("|| |=========|  |=========| ||");
+                    Console.WriteLine("|| |         |  |         | ||");
+                    Console.WriteLine("|| |=========|  |=========| ||");
+                    Console.WriteLine("==============================");
+                    Console.WriteLine("");
+                    Console.WriteLine("조심 조심 조심 조심 조심 조심 조심");
+                    Console.WriteLine("");
+                    String ____ = Console.ReadLine();
+                    Console.Clear();
+                    Console.WriteLine("이곳은 좀 음산합니다. 이상한 냄새도 납니다. ");
+                    Console.WriteLine("");
+                    Console.WriteLine("어서 선물을 놓고 와야겠습니다. ");
+                    Console.WriteLine("");
+                    Console.WriteLine("(콜록 콜록 콜록)  ? 어디서 기침 소리가 들립니다. ");
+                    Console.WriteLine("");
+                    Console.WriteLine("     |￣￣( ´Д｀)￣|");
+                    Console.WriteLine("     |＼⌒⌒⌒⌒⌒⌒  ＼");
+                    Console.WriteLine("     |　 ＼⌒⌒⌒⌒⌒⌒  ＼");
+                    Console.WriteLine("     ＼　 ｜⌒⌒⌒⌒⌒⌒⌒ |");
+                    Console.WriteLine("　      ＼ |＿＿＿＿＿＿＿_|");
+                    Console.WriteLine("");
+                    Console.WriteLine("!!!!! 사람이 누워있습니다. 매우 아파보이는군요. 선물이 필요없어보입니다. ");
+                    Console.WriteLine("");
+                    Console.WriteLine("마음이 좋지 않은 채 나가려고 합니다. 씁쓸합니다.... 뒤로 돌던 그때! ");
+                    Console.WriteLine("");
+                    Console.WriteLine("　　  ＿＿＿＿ ");
+                    Console.WriteLine("　  ／;;;;;;;; ＼ ");
+                    Console.WriteLine("　 /;;;;;;;;     ＼ ");
+                    Console.WriteLine("  /:／／　　　  ＼｜ ");
+                    Console.WriteLine(" ｜/　　(･)　(･)  ｜ ");
+                    Console.WriteLine("(6　　　　 つ　    ｜ ");
+                    Console.WriteLine(" ｜　　  ＿＿＿　  ｜ ");
+                    Console.WriteLine("  ＼　　    ,     ／ ");
+                    Console.WriteLine("　　＼＿＿＿＿＿／");
+                    Console.WriteLine("");
+                    Console.WriteLine("꼬마가 있습니다!! 이런 제대로 들켜버렸습니다. ");
+                    Console.WriteLine("");
+                    String _______ = Console.ReadLine();
+                    Console.Clear();
+                    Console.WriteLine("꼬마 : 산타 맞죠....? 제발 소원 한번만 들어주세요...ㅠㅠ");
+                    Console.WriteLine("");
+                    Console.WriteLine("무슨 일인걸까요? 선물이 아닌 소원을 빌고 있습니다. 들어주시겠습니까? (예 / 아니요)");
+
+                    string ew = Console.ReadLine();
+                    if (ew == "예")
+                    {
+                        Console.WriteLine("");
+                        Console.WriteLine("당신 : 무슨 일이니 꼬마야.... ");
+                        Console.WriteLine("");
+                        Console.WriteLine("꼬마 : 저희 아버지가 편찮으세요... 제발 낫게 해주세요.... 행복한 크리스마스를 보내고 싶어요.... ");
+                        Console.WriteLine("");
+                        Console.WriteLine("저런.... 너무 안타깝습니다.");
+                        Console.WriteLine("");
+                        Console.WriteLine("당신 : 꼬마야... 소원을 들어줄 수는 없단다... 대신 약을 선물로 줄게....");
+                        Console.WriteLine("");
+                        Console.WriteLine("약을 받은 꼬마는 곧장 아버지에게 가서 약을 먹인다. 약을 먹은 아버지는 마법처럼 바로 나았다!!!");
+                        Console.WriteLine("마법의 약이었나 아님 꼬마의 바람때문인지는 잘 모르겠지만 건강을 되찮은 모습이다.");
+                        Console.WriteLine("");
+                        Console.WriteLine("꼬마 : !!! 감사합니다. 산타를 보았다고는 아무에게도 말하지 않을게요!!");
+                        Console.WriteLine("");
+                        Console.WriteLine("당신 : 원래 날 본다면 데려가야 하지만 너는 데려가지 못하겠다... 아버지를 잘 모시고 있으렴");
+                        Console.WriteLine("       그럼 이만!");
+                        Console.WriteLine("");
+                        Console.WriteLine("세 번째 집 선물 전달을 완료하였습니다. ");
+                        String ______ = Console.ReadLine();
+                        Console.Clear();
+                        Console.WriteLine("");
+                        Console.WriteLine("산타 : 자네 어떤가? 여러 집을 돌아다니면서 느낀 점이 있나?");
+                        Console.WriteLine("");
+                        Console.WriteLine("당신 : 행복해 보이는 집도 사연 있는 집도 보니 좀 씁쓸합니다.....");
+                        Console.WriteLine("");
+                        Console.WriteLine("산타 : 이번 기회로 크리스마스가 모두에게 있어 행복만 한 날이 될 수 있다는 것을 느꼈으면 좋겠군!!");
+                        Console.WriteLine("       이제 가 보아도 좋네!! 당신도 행복한 크리스마스를 보내라구!!");
+                        Console.WriteLine("       자 눈을 3초 동안 감고 다시 떠보게 ");
+                        Console.WriteLine("");
+                        Console.WriteLine("당신은 눈을 3초 동안 감고 떠 보았다. ");
+                        Console.WriteLine("");
+                        Console.WriteLine("!!!!!! 당신의 침대로 돌아왔습니다. 이것은 꿈일까요?  ");
+                        Console.WriteLine("");
+                        Console.WriteLine("엄마 : 케빈~~~~ 내려와서 케익 먹어야지!!");
+                        Console.WriteLine("");
+                        Console.WriteLine("?????? 왜 집에.... 일단 내려가봅니다.. ");
+                        Console.WriteLine("");
+                        Console.WriteLine("당신은 가족과 함께 케익을 먹고 행복한 크리스마스를 보냈습니다.");
+                        Console.WriteLine("");
+                        Console.WriteLine("이번 크리스마스에는 가족의 소중함과 크리스마스의 의미를 더욱 깊게 깨닫게 되는 날이 되었습니다.");
+                        Console.WriteLine("");
+                        String ________ = Console.ReadLine();
+                        Console.Clear();
+                        Console.WriteLine("");
+                        Console.WriteLine("___  ___                           _____  _            _       _      ");
+                        Console.WriteLine("|  |/  |                          /  __ || |          (_)     | |           ");
+                        Console.WriteLine("| .  . |  ___  _ __  _ __  _   _  | /  |/| |__   _ __  _  ___ | |_  _ __ ___    __");
+                        Console.WriteLine("| ||/| | / _ || '__|| '__|| | | | | |    | '_ | | '__|| |/ __|| __|| '_ ` _ |  / _` |/ __|");
+                        Console.WriteLine("| |  | ||  __/| |   | |   | |_| | | |__/|| | | || |   | ||__ || |_ | | | | | || (_| ||__ |");
+                        Console.WriteLine("|_|  |_/ |___||_|   |_|    |__, |  |____/|_| |_||_|   |_||___/ |__||_| |_| |_| |__,_||___/");
+                        Console.WriteLine("                            __/ |      ");
+                        Console.WriteLine("                           |___/                  ");
+                        Console.WriteLine("");
+
+                    }
+                    else if (ew == "아니요")
+                    {
+                        Console.WriteLine("");
+                        Console.WriteLine("꼬마의 이야기를 듣지 않고 선물을 전달했습니다. ");
+                        Console.WriteLine("");
+                        Console.WriteLine("산타 : 자네 어떤가? 여러 집을 돌아다니면서 느낀 점이 있나?");
+                        Console.WriteLine("");
+                        Console.WriteLine("당신 : 행복해 보이는 집도 사연 있는 집도 보니 좀 씁쓸합니다.....");
+                        Console.WriteLine("");
+                        Console.WriteLine("산타 : 이번 기회로 크리스마스가 모두에게 있어 행복만 한 날이 될 수 있다는 것을 느꼈으면 좋겠군!!");
+                        Console.WriteLine("       이제 가 보아도 좋네!! 당신도 행복한 크리스마스를 보내라구!!");
+                        Console.WriteLine("       자 눈을 3초 동안 감고 다시 떠보게 ");
+                        Console.WriteLine("");
+                        Console.WriteLine("당신은 눈을 3초 동안 감고 떠 보았다. ");
+                        Console.WriteLine("");
+                        Console.WriteLine("!!!!!! 당신의 침대로 돌아왔습니다. 이것은 꿈일까요?  ");
+                        Console.WriteLine("");
+                        Console.WriteLine("엄마 : 케빈~~~~ 내려와서 케익 먹어야지!!");
+                        Console.WriteLine("");
+                        Console.WriteLine("?????? 왜 집에.... 일단 내려가봅니다.. ");
+                        Console.WriteLine("");
+                        Console.WriteLine("당신은 가족과 함께 케익을 먹고 행복한 크리스마스를 보냈습니다.");
+                        Console.WriteLine("");
+                        Console.WriteLine("이번 크리스마스에는 가족의 소중함과 크리스마스의 의미를 더욱 깊게 깨닫게 되는 날이 되었습니다.");
+                        Console.WriteLine("");
+                        String ________ = Console.ReadLine();
+                        Console.Clear();
+                        Console.WriteLine("");
+                        Console.WriteLine("___  ___                           _____  _            _       _      ");
+                        Console.WriteLine("|  |/  |                          /  __ || |          (_)     | |           ");
+                        Console.WriteLine("| .  . |  ___  _ __  _ __  _   _  | /  |/| |__   _ __  _  ___ | |_  _ __ ___    __");
+                        Console.WriteLine("| ||/| | / _ || '__|| '__|| | | | | |    | '_ | | '__|| |/ __|| __|| '_ ` _ |  / _` |/ __|");
+                        Console.WriteLine("| |  | ||  __/| |   | |   | |_| | | |__/|| | | || |   | ||__ || |_ | | | | | || (_| ||__ |");
+                        Console.WriteLine("|_|  |_/ |___||_|   |_|    |__, |  |____/|_| |_||_|   |_||___/ |__||_| |_| |_| |__,_||___/");
+                        Console.WriteLine("                            __/ |      ");
+                        Console.WriteLine("                           |___/                  ");
+                        Console.WriteLine("");
+                    }
+                    else
+                    {
+                        Console.WriteLine("잘 읽어보세요");
+                        string oo = Console.ReadLine();
+                        if (oo == "예")
+                        {
+                            //예
+                        }
+                        else if (oo == "아니요")
+                        {
+                            //아니요
+                        }
+                        else
+                        {
+                            no();
+                        }
+                    }
+                }
+                else
+                {
+                    no();
+                }
+            }
+        }
+
+
+        static void nojamStory()
+        {
+            Console.WriteLine("당신은 그저그런 가족여행을 즐기고 계십니다.");
+            Console.WriteLine("");
+            Console.WriteLine("너무 지루한 나머지 잠에 들고 맙니다..");
+            Console.WriteLine("");
+            Console.WriteLine("점점 꿈속에 빠집니다.");
+            String _ = Console.ReadLine();
+            Console.Clear();
+            alone();
+
+        }
+
+        static void orora()
+        {
+            Console.Clear();
+            Console.WriteLine("");
+            Console.WriteLine("당신은 오로라를 직관합니다. 너무 멋있습니다. 그때!!! ");
+            Console.WriteLine("");
+            Console.WriteLine("그 사이로 산타로 추정되는 썰매가 지나갑니다!!");
+            Console.WriteLine("");
+            Console.WriteLine("따라가보시겠습니까? ( 당연하죠 / 안가요 )");
+            Console.WriteLine("");
+
+            string ss = Console.ReadLine();
+            if (ss == "당연하죠")
+            {
+                Console.Clear();
+                Console.WriteLine("산타로 추정되는 썰매를 따라가보는 당신");
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.WriteLine("             ●             ");
+                Console.WriteLine("            ┗╋┓  조심 조심 ");
+                Console.WriteLine("            ┏┫             ");
+                Console.WriteLine("             ┃             ");
+                Console.ForegroundColor = ConsoleColor.White;
+                Console.WriteLine("산타가 정말 있습니다  !!");
+                Console.WriteLine("");
+                Console.WriteLine("그때 산타와 눈이 마주쳤습니다.  다가오고 있습니다.");
+                String _ = Console.ReadLine();
+                Console.Clear();
+                friend();
+
+            }
+
+            else if (ss == "안가요")
+            {
+                Console.Clear();
+                Console.WriteLine("산타 이야기가 재미 없으신가요.....(시무룩) ");
+                Console.WriteLine("알겠습니다. 계속 이어가 보도록 하죠...");
+                String _ = Console.ReadLine();
+                Console.Clear();
+                nojamStory();
+            }
+        }
+
+        static void santa()
+        {
+            Console.Clear();
+            Console.WriteLine("");
+            Console.WriteLine("이 마을에 전설로 내려오는 이야기가 있습니다.");
+            Console.WriteLine("");
+            Console.WriteLine("바로 산타를 볼 수 있다는 이야기인데요. 조건이 있습니다.");
+            Console.WriteLine("");
+            Console.WriteLine("- 조건 ------------------------------------------------");
+            Console.WriteLine("|                                                      |");
+            Console.WriteLine("| 1. 크리스마스 이브에서 크리스마스로 넘어가는 밤 12시 |");
+            Console.WriteLine("|                                                      |");
+            Console.WriteLine("| 2. 상자에 숨기 (다른 곳에 숨을 시 산타가 알아봄)     |");
+            Console.WriteLine("|                                                      |");
+            Console.WriteLine("| 3. 반드시 굴뚝의 불을 꺼 놓을 것                     |");
+            Console.WriteLine("|                                                      |");
+            Console.WriteLine("| 4. 산타가 와도 절대 놀라지 않고 말걸지 않을 것!      |");
+            Console.WriteLine("|    - 다시는 산타를 볼 수 없게 됨                     |");
+            Console.WriteLine("-------------------------------------------------------");
+            Console.WriteLine("");
+            Console.WriteLine("산타를 만나보시겠습니까?  ( 예 / 아니요)");
+
+            string aa = Console.ReadLine();
+            if (aa == "예")
+            {
+                Console.WriteLine("");
+                Console.WriteLine("이제 곧 밤 12시가 되어갑니다.");
+                Console.WriteLine("");
+                Console.WriteLine("상자에 숨으셔야 합니다. 굴뚝의 불을 꺼 놓을셨나요?  (당연하죠 / 아니요) ");
+
+                string nn = Console.ReadLine();
+                if (nn == "당연하죠")
+                {
+                    Console.WriteLine("");
+                    Console.WriteLine("잘하셨습니다 이제 곧 산타가 옵니다");
+                    Console.WriteLine("");
+                    Console.WriteLine("11시 59분......12시!!!!");
+                    Console.WriteLine("");
+                    Console.WriteLine("굴뚝에서 소리가 납니다!");
+                    Console.WriteLine("");
+                    Console.WriteLine("산타 : 아효.... 이 집은 굴뚝이 좀 작군..");
+                    Console.WriteLine("");
+                    Console.WriteLine("!!!! 정말 산타가 있습니다!");
+                    Console.WriteLine("");
+                    Console.WriteLine("당신은 너무 놀라 그만 뒤에 있던 조명을 건드리고 말았습니다.");
+                    Console.WriteLine("");
+                    Console.WriteLine("이런 산타와 눈이 마주쳐버렸습니다.");
+                    Console.WriteLine("");
+                    String _ = Console.ReadLine();
+                    Console.Clear();
+                    friend();
+                }
+                else if (nn == "아니요")
+                {
+                    Console.WriteLine("산타가 굴뚝을 타고 내려오다가 화상을 입었습니다.");
+                    Console.WriteLine("");
+                    Console.WriteLine("앞으로 당신의 집에는 오지 않을 예정입니다. 아쉽군요");
+                    String _ = Console.ReadLine();
+                    Console.Clear();
+                    no();     //지뢰
+
+                }
+            }
+            else if (aa == "아니요")
+            {
+                Console.WriteLine("지금이라도 오로라를 보러 가시겠습니까? (네 / 아니요)");
+
+                String ff = Console.ReadLine();
+                if (ff == "네")
+                {
+                    orora();
+                }
+                else if (ff == "아니요")
+                {
+                    nojamStory();
+                }
+                else
+                {
+                    no();
+                }
+
+            }
+            else
+            {
+                no();
+            }
+        }
+    }
+}
